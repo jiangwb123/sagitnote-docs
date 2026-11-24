@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>网页标注工具 — Sagitnote 帮助文档</title>
+  <meta name="description" content="Sagitnote（天箭批注）控制面板全解：文本高亮、箭头、矩形框、截图、自由线条、文字批注、元素标记、标注列表抽屉与更多菜单。">
+  <link rel="canonical" href="https://jiangwb123.github.io/sagitnote-docs/docs/zh/annotation-tools.html">
+  <link rel="alternate" hreflang="en" href="https://jiangwb123.github.io/sagitnote-docs/docs/en/annotation-tools.html">
+  <link rel="alternate" hreflang="zh" href="https://jiangwb123.github.io/sagitnote-docs/docs/zh/annotation-tools.html">
+  <link rel="alternate" hreflang="x-default" href="https://jiangwb123.github.io/sagitnote-docs/docs/">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../assets/fonts/fonts.css">
+  <link rel="stylesheet" href="../assets/docs.css">
+</head>
+<body class="docs-body" data-doc-id="annotation-tools" data-doc-lang="zh">
+
+  <header class="docs-topbar">
+    <div class="docs-topbar-inner">
+      <a class="docs-brand" href="../../index.html">
+        <svg width="26" height="26" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+          <rect width="64" height="64" rx="15" fill="#12875F"/>
+          <g fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 24.8 Q38.6 25.4 39.2 58" stroke-width="4.8"/>
+            <path d="M15.8 48.2 L34.3 29.7" stroke-width="4"/>
+            <rect x="44.43" y="6" width="13.57" height="13.57" rx="1.2" stroke-width="4.4"/>
+          </g>
+          <polygon points="42.3,21.7 38.2,33.6 30.4,25.8" fill="#FFFFFF"/>
+        </svg>
+        <span>Sagitnote</span>
+        <span class="docs-brand-badge">文档</span>
+      </a>
+      <nav class="docs-topbar-nav">
+        <a class="docs-topbar-link docs-topbar-link--home" href="../../index.html">首页</a>
+        <a class="docs-lang-switch" id="docsLangSwitch" href="../en/">English</a>
+        <button class="docs-menu-btn" id="docsMenuBtn" aria-label="打开导航">
+          <svg viewBox="0 0 24 24" width="18" height="18"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" fill="currentColor"/></svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <div class="docs-layout">
+    <aside class="docs-sidebar" id="docsSidebar">
+      <nav id="docsSidebarNav" aria-label="文档导航"></nav>
+    </aside>
+    <div class="docs-shade" id="docsShade"></div>
+
+    <main class="docs-main">
+      <nav class="docs-breadcrumb">
+        <a href="index.html">帮助文档</a><span class="docs-crumb-sep">›</span><span>快速上手</span><span class="docs-crumb-sep">›</span><span class="docs-crumb-current">网页标注工具</span>
+      </nav>
+
+      <header class="docs-page-head">
+        <h1 class="docs-page-title">网页标注工具</h1>
+        <p class="docs-page-lede">浮动控制面板里的每一件工具：高亮、绘图、截图、批注，以及帮你管理当前页面标注的列表抽屉。</p>
+      </header>
+
+      <section class="docs-section">
+        <h2 class="docs-h2" id="panel">控制面板一览</h2>
+        <p>Sagitnote 在页面上激活后，控制面板悬浮于内容之上。拖动左缘把手可移到任意位置；点 <strong>—</strong> 可最小化成小标签，阅读时不再遮挡。</p>
+        <figure class="docs-figure">
+          <img class="docs-figure-img docs-figure-img--natural" src="../assets/img/en/tools-toolbar-anatomy.png" width="90" height="735" alt="Sagitnote 控制面板工具栏">
+          <figcaption><strong>图 1</strong> — 控制面板：拖动把手、最小化、撤销、工具按钮、线宽、颜色、样式、自动、浏览与更多（⋯）菜单。</figcaption>
+        </figure>
+        <div class="doc-table-wrap">
+          <table class="doc-table">
+            <thead><tr><th>部位</th><th>作用</th></tr></thead>
+            <tbody>
+              <tr><td>⠿ 把手</td><td>拖动可在页面上任意移动面板；拖到屏幕右缘或下缘过半时，面板会自动切换横排/竖排布局。</td></tr>
+              <tr><td>— 最小化</td><td>把面板收成小标签，再点恢复。</td></tr>
+              <tr><td>↶ 撤销</td><td>撤销刚创建的标注（也可用 <kbd class="docs-kbd">Ctrl</kbd>+<kbd class="docs-kbd">Z</kbd>）。</td></tr>
+              <tr><td>工具按钮</td><td>箭头、旗帜、矩形框、图片矩形、页面截图、自由线条、文字批注、元素标记。</td></tr>
+              <tr><td>线宽</td><td>绘图工具的线条粗细（1–5 px）；也决定文字批注的字号。</td></tr>
+              <tr><td><strong>A</strong> 颜色</td><td>新标注使用的当前颜色。</td></tr>
+              <tr><td>样式组</td><td>文字高亮样式：填充、边框、下划线、波浪线、字色。</td></tr>
+              <tr><td>自动</td><td>划选文字后自动高亮。</td></tr>
+              <tr><td>浏览（数字）</td><td>打开当前页面全部标注的列表抽屉。</td></tr>
+              <tr><td>💬 弹窗开关</td><td>一键关闭页面上所有已打开的批注卡片（见<a href="#popups">批注弹窗</a>）。</td></tr>
+              <tr><td>⋯ 更多</td><td>整页批注、收藏、导入导出、标注管理、分享、快照、设置、帮助。</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="docs-section">
+        <h2 class="docs-h2" id="highlights">文本高亮</h2>
+        <p>在页面上选中任意文字，选区旁会弹出颜色选择条。点一个颜色圆点，高亮立即按面板<strong>样式组</strong>当前选中的样式生效；选择条会保持打开，点亮其中的<strong>笔</strong>按钮即可马上给这条标注写批注、加标签，并选择显示方式（悬停显示或常显）。点击已有高亮会弹出快捷面板：换颜色、编辑批注（笔）或删除；要换样式，打开<strong>浏览</strong>，在该标注的<strong>标注详情</strong>里修改。</p>
+        <p>面板样式组提供的高亮样式：</p>
+        <ul class="docs-list">
+          <li><strong>填充</strong> — 经典的荧光笔效果。</li>
+          <li><strong>边框</strong> — 给选区加一圈矩形边框。</li>
+          <li><strong>下划线</strong> — 文字下方一条直线。</li>
+          <li><strong>波浪线</strong> — 文字下方一条波浪线（适合标"待再看"）。</li>
+          <li><strong>字色</strong> — 直接改变文字本身的颜色。</li>
+        </ul>
+        <div class="docs-callout docs-callout--tip">
+          <span class="docs-callout-icon">💡</span>
+          <div class="docs-callout-body">
+            <p>读长文时：先打开<strong>自动</strong>，之后只管划选——每段选区都会按当前颜色和样式自动高亮，省去每次点选。用完记得关掉。</p>
+          </div>
+        </div>
+        <figure class="docs-figure">
+          <img class="docs-figure-img" src="../assets/img/en/getting-started-picker.png" width="1440" height="900" alt="划选文字后出现的样式选择器">
+          <figcaption><strong>图 2</strong> — 划选文字后弹出颜色选择条：点一个颜色圆点，高亮立即生效。</figcaption>
+        </figure>
+        <p>高亮在刷新后依然存在：只要页面内容还在，Sagitnote 会在你再次访问时自动恢复这些高亮。</p>
+      </section>
+
+      <section class="docs-section">
+        <h2 class="docs-h2" id="drawing-tools">绘图工具</h2>
+        <p>在面板上点选一个工具，然后到页面上操作。再次点击该工具（或改选其他工具）即可收起——同一时间只有一个工具生效。工具生效时，鼠标所指的元素会出现蓝色描边，方便精确对准。</p>
+        <p>每个图形都是一条标注——会出现在列表抽屉里，可编辑、刷新后保留。</p>
+
+        <h3 class="docs-h3" id="tool-arrow">箭头</h3>
+        <p>从起点拖到箭头要指向的位置。适合指出图表、段落或版面中的某个具体位置。</p>
+
+        <h3 class="docs-h3" id="tool-flag">旗帜</h3>
+        <p>在页面任意位置点击即可插上一面小旗。点击旗帜可以附加或查看批注——是长页面上的可视化书签。</p>
+
+        <h3 class="docs-h3" id="tool-rect-frame">矩形框</h3>
+        <p>拖动画出一个矩形框，圈住任何内容——一段话、一个价格、一张照片——表示"看这里"。</p>
+
+        <h3 class="docs-h3" id="tool-image-rect">图片矩形</h3>
+        <p>只对图片生效：启用该工具后，把鼠标移到图片上（光标变为十字），在图片上拖拽即可画出一个实线矩形框。Sagitnote 会记住这张图片——开启设置里的<strong>自动保存图片</strong>（默认开启）时还会把图片存到本地，即使图片日后失效或变更，你的标注依然稳定。</p>
+
+        <h3 class="docs-h3" id="tool-page-screenshot">页面截图</h3>
+        <p>拖拽框选页面的任意区域，Sagitnote 会把它截成图片批注。如果框选区域超过一屏，会自动滚动拼接截取，长区块也能一次框完。截图随标注一起保存，在列表抽屉和标注管理器中显示缩略图。</p>
+
+        <h3 class="docs-h3" id="tool-freehand">自由线条</h3>
+        <p>用鼠标或手写笔随手画——圈个错别字、勾个重点、画个示意图都行。</p>
+
+        <h3 class="docs-h3" id="tool-text-note">文字批注</h3>
+        <p>在页面上点一个位置然后输入。批注会钉在你放置的地方，像一张便利贴。</p>
+
+        <h3 class="docs-h3" id="tool-element-mark">元素标记</h3>
+        <p>在页面上移动鼠标，Sagitnote 会框出完整的元素——按钮、图片、卡片、链接。点击即标记该元素。相比手绘图形，元素标记在页面布局变化时更稳固。</p>
+
+        <figure class="docs-figure">
+          <img class="docs-figure-img" src="../assets/img/en/tools-draw-examples.png" width="1440" height="900" alt="页面上的箭头、矩形与自由绘制示例">
+          <figcaption><strong>图 3</strong> — 绘图工具示例：箭头、矩形框与手绘圈注。</figcaption>
+        </figure>
+      </section>
+
+      <section class="docs-section">
+        <h2 class="docs-h2" id="styles">颜色与样式</h2>
+        <p>面板的颜色按钮打开调色板——红、琥珀、绿、蓝、紫、橙，高亮与绘图通用，全部六色对所有用户开放。你还可以在设置（调色板）里给颜色改名（最长 12 个字符）、调整色值，建立自己的标注配色体系。</p>
+        <p><strong>线宽</strong>（1–5 px）控制绘图的线条粗细、箭头大小和矩形边框——同时也决定文字批注的字号。它不影响文本高亮；文本高亮的样式由<strong>样式组</strong>（填充、边框、下划线、波浪线、字色）决定。上次使用的颜色与样式会被记住，用于下一次标注。</p>
+      </section>
+
+      <section class="docs-section">
+        <h2 class="docs-h2" id="popups">批注弹窗</h2>
+        <p>带批注内容的标注会显示一张批注卡片。点卡片右上角的 <strong>✕</strong> 可将其收起——本次访问内不再自动弹出，标注本身不受影响。</p>
+        <p>卡片收起后，标记上会留一个小气泡图标：</p>
+        <ul class="docs-list">
+          <li><strong>文字高亮</strong> — 气泡紧跟在高亮文字之后。</li>
+          <li><strong>图形标记</strong>（箭头、矩形框、截图等）— 气泡出现在标记旁（多为右上角）。</li>
+          <li><strong>图片批注</strong>（整图标注）— 复用图片旁的画笔图标。</li>
+        </ul>
+        <p>点击气泡即可重新打开批注；桌面设备上悬停气泡还能快速预览内容。重新保存标注也会让卡片重新出现。</p>
+        <p>想一次清空所有卡片？工具栏上的 <strong>💬 弹窗开关</strong>可一键关闭页面上所有已打开的批注卡片——该开关状态会被记住。</p>
+      </section>
+
+      <section class="docs-section">
+        <h2 class="docs-h2" id="drawer">标注列表抽屉</h2>
+        <p><strong>浏览</strong>按钮（显示当前页面的标注数量）打开抽屉——当前页面的标注工作台：</p>
+        <ul class="docs-list">
+          <li><strong>搜索</strong> — 按批注内容过滤标注。</li>
+          <li><strong>列表</strong> — 带类型图标的标注清单，点击一项可跳转到页面上的对应位置。</li>
+          <li><strong>全部显示 / 全部隐藏</strong> — 一键切换页面上所有标注的可见性。</li>
+          <li><strong>编辑</strong> — 打开标注详情：换颜色或样式、加标签、写批注，也可以删除。</li>
+        </ul>
+        <p>在设置中可以选择抽屉的打开方式：<strong>推屏</strong>压缩页面腾出空间，<strong>覆盖</strong>则让抽屉浮在页面之上；抽屉头部的按钮也能随时就地切换，选择会被记住。</p>
+        <figure class="docs-figure">
+          <img class="docs-figure-img" src="../assets/img/en/tools-drawer-browse.png" width="1440" height="900" alt="页面上的标注列表抽屉">
+          <figcaption><strong>图 4</strong> — 抽屉从右侧打开，列出当前页面的每条标注，支持搜索与显示/隐藏。</figcaption>
+        </figure>
+        <figure class="docs-figure">
+          <img class="docs-figure-img" src="../assets/img/en/tools-drawer-detail.png" width="1440" height="900" alt="标注详情面板：类型、颜色、样式、内容、标签与批注">
+          <figcaption><strong>图 5</strong> — 标注详情：类型、颜色、样式、引用内容、标签、你的批注，以及删除/保存操作。</figcaption>
+        </figure>
+      </section>
+
+      <section class="docs-section">
+        <h2 class="docs-h2" id="more-menu">更多（⋯）菜单</h2>
+        <p>更多菜单汇集了页面级操作：</p>
+        <div class="doc-table-wrap">
+          <table class="doc-table">
+            <thead><tr><th>菜单项</th><th>作用</th></tr></thead>
+            <tbody>
+              <tr><td>📝 整页批注</td><td>给整个页面写一条自由批注——给下次访问留个总结或提醒。</td></tr>
+              <tr><td>收藏</td><td>把页面加星，方便在标注管理器中找到。</td></tr>
+              <tr><td>导出</td><td>把当前页面的标注（含页面内容）导出为文件。</td></tr>
+              <tr><td>导入</td><td>从导出文件中导入标注。</td></tr>
+              <tr><td>标注管理</td><td>打开完整标注库——所有页面、文件夹与设置。</td></tr>
+              <tr><td>分享批注</td><td>把本文档的标注通过链接分享给他人（免费版与 Pro 均可用）。</td></tr>
+              <tr><td>保存快照</td><td>保存页面的快照副本，即使原页面变化，内容也被留住。</td></tr>
+              <tr><td>生成页面修改提示词</td><td>把页面上的全部标注整理成结构化提示词——把反馈交给开发者或 AI 编程工具时很方便。</td></tr>
+              <tr><td>设置</td><td>打开扩展设置。</td></tr>
+              <tr><td>标注开关</td><td>临时显示/隐藏全部 Sagitnote 标注。</td></tr>
+              <tr><td>反馈与建议</td><td>告诉我们哪里好用、哪里不好用。</td></tr>
+              <tr><td>帮助文档</td><td>打开本帮助文档。</td></tr>
+              <tr><td>升级 Pro <span class="doc-badge doc-badge--pro">Pro</span></td><td>升级套餐、查看额度、查看加购预览。</td></tr>
+              <tr><td>登录</td><td>未登录时显示，进入登录/注册页。退出登录请用设置页或标注管理器。</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <figure class="docs-figure">
+          <img class="docs-figure-img" src="../assets/img/en/tools-more-menu.png" width="1440" height="900" alt="控制面板的更多菜单">
+          <figcaption><strong>图 6</strong> — 更多菜单中的页面级操作。</figcaption>
+        </figure>
+      </section>
+
+      <section class="docs-section">
+        <h2 class="docs-h2" id="undo-delete">撤销与删除</h2>
+        <p>手滑了？面板上的<strong>↶ 撤销</strong>按钮可以连续撤回最近创建的标注（也可用 <kbd class="docs-kbd">Ctrl</kbd>+<kbd class="docs-kbd">Z</kbd>），直到撤销栈清空。注意撤销只针对"创建"——删除操作不可撤销，需要删除标注时用标注自身的快捷面板或列表抽屉里的删除按钮。</p>
+      </section>
+
+      <nav class="docs-pager">
+        <div class="docs-pager-prev">
+          <a href="index.html">
+            <span class="docs-pager-label">上一篇</span>
+            <span class="docs-pager-title">← 欢迎与快速上手</span>
+          </a>
+        </div>
+        <div class="docs-pager-next">
+          <a href="manager-page.html">
+            <span class="docs-pager-label">下一篇</span>
+            <span class="docs-pager-title">标注管理器 →</span>
+          </a>
+        </div>
+      </nav>
+    </main>
+
+    <aside class="docs-toc" id="docsToc">
+      <div class="docs-toc-title">本页目录</div>
+      <div id="docsTocList"></div>
+    </aside>
+  </div>
+
+  <footer class="docs-footer">
+    <div class="docs-footer-inner">
+      <span>© 2026 Sagitnote</span>
+      <div class="docs-footer-links">
+        <a href="../../index.html">首页</a>
+        <a href="../../privacy-policy-zh.html">隐私政策</a>
+        <a href="../../terms-of-service-zh.html">服务条款</a>
+        <a href="mailto:service@webnoteshub.com">service@webnoteshub.com</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/docs-nav.js"></script>
+  <script src="../assets/docs.js"></script>
+</body>
+</html>

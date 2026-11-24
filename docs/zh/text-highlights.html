@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>文本高亮 — Sagitnote 帮助文档</title>
+  <meta name="description" content="关于文字标记的一切：颜色、样式、批注、标签、自动模式，以及高亮如何在页面变化后依然保留。">
+  <link rel="canonical" href="https://jiangwb123.github.io/sagitnote-docs/docs/zh/text-highlights.html">
+  <link rel="alternate" hreflang="en" href="https://jiangwb123.github.io/sagitnote-docs/docs/en/text-highlights.html">
+  <link rel="alternate" hreflang="zh" href="https://jiangwb123.github.io/sagitnote-docs/docs/zh/text-highlights.html">
+  <link rel="alternate" hreflang="x-default" href="https://jiangwb123.github.io/sagitnote-docs/docs/">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../assets/fonts/fonts.css">
+  <link rel="stylesheet" href="../assets/docs.css">
+</head>
+<body class="docs-body" data-doc-id="text-highlights" data-doc-lang="zh">
+
+  <header class="docs-topbar">
+    <div class="docs-topbar-inner">
+      <a class="docs-brand" href="../../index.html">
+        <svg width="26" height="26" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+          <rect width="64" height="64" rx="15" fill="#12875F"/>
+          <g fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 24.8 Q38.6 25.4 39.2 58" stroke-width="4.8"/>
+            <path d="M15.8 48.2 L34.3 29.7" stroke-width="4"/>
+            <rect x="44.43" y="6" width="13.57" height="13.57" rx="1.2" stroke-width="4.4"/>
+          </g>
+          <polygon points="42.3,21.7 38.2,33.6 30.4,25.8" fill="#FFFFFF"/>
+        </svg>
+        <span>Sagitnote</span>
+        <span class="docs-brand-badge">文档</span>
+      </a>
+      <nav class="docs-topbar-nav">
+        <a class="docs-topbar-link docs-topbar-link--home" href="../../index.html">首页</a>
+        <a class="docs-lang-switch" id="docsLangSwitch" href="../en/">English</a>
+        <button class="docs-menu-btn" id="docsMenuBtn" aria-label="打开导航">
+          <svg viewBox="0 0 24 24" width="18" height="18"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" fill="currentColor"/></svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <div class="docs-layout">
+    <aside class="docs-sidebar" id="docsSidebar">
+      <nav id="docsSidebarNav" aria-label="文档导航"></nav>
+    </aside>
+    <div class="docs-shade" id="docsShade"></div>
+
+    <main class="docs-main">
+      <nav class="docs-breadcrumb">
+        <a href="index.html">帮助文档</a><span class="docs-crumb-sep">›</span><span>标注进阶</span><span class="docs-crumb-sep">›</span><span class="docs-crumb-current">文本高亮</span>
+      </nav>
+
+      <header class="docs-page-head">
+        <h1 class="docs-page-title">文本高亮</h1>
+        <p class="docs-page-lede">关于文字标记的一切：颜色、样式、批注、标签、自动模式，以及高亮如何在页面变化后依然保留。</p>
+      </header>
+
+      <div class="docs-noscript-nav">
+        <strong>文档页面:</strong> <a href="index.html">欢迎与快速上手</a> · <a href="annotation-tools.html">网页标注工具</a> · <a href="manager-page.html">标注管理器</a> · <a href="text-highlights.html">文本高亮</a> · <a href="screenshots-and-image-rects.html">截图与图片矩形</a> · <a href="element-marks-and-frames.html">元素标记与内嵌区域</a> · <a href="keyboard-shortcuts.html">快捷键</a> · <a href="folders-and-favorites.html">文件夹与收藏</a> · <a href="backup-import-export.html">备份、导入与导出</a> · <a href="cloud-sync.html">云同步</a> · <a href="sharing-links.html">分享链接</a> · <a href="plans-and-limits.html">版本与限额</a> · <a href="own-documents.html">自建文档</a> · <a href="annotating-pdfs.html">PDF 批注</a> · <a href="snapshots.html">页面快照</a> · <a href="troubleshooting.html">问题排查</a> · <a href="faq.html">常见问题</a> · <a href="contact-support.html">联系支持</a>
+      </div>
+
+      
+      <section class="docs-section">
+        <h2 class="docs-h2" id="create">创建高亮</h2>
+        <p>在页面上选中任意文字——选区旁会弹出颜色选择条。点一个颜色圆点，文字立即按面板<strong>样式组</strong>当前的样式高亮。紧接着你可以：</p>
+        <ul class="docs-list">
+          <li>点亮选择条里的<strong>笔</strong>按钮，为刚创建的这条高亮写批注、加标签，并选择显示方式：<strong>悬停显示</strong>或<strong>常显</strong>在页面上。</li>
+          <li>想换颜色？点击高亮本身，在弹出的快捷面板里换色。</li>
+        </ul>
+        <p>建好一条后再划选下一句即可——每次划选都会弹出选择条，连续标注很顺手。</p>
+      </section>
+
+      <section class="docs-section">
+        <h2 class="docs-h2" id="styles">五种高亮样式</h2>
+        <div class="doc-table-wrap">
+          <table class="doc-table">
+            <thead><tr><th>样式</th><th>效果</th></tr></thead>
+            <tbody>
+              <tr><td>填充</td><td>经典的荧光笔效果。</td></tr>
+              <tr><td>边框</td><td>文字四周一圈矩形边框。</td></tr>
+              <tr><td>下划线</td><td>文字下方的直线。</td></tr>
+              <tr><td>波浪线</td><td>文字下方的波浪线——适合标"待再看"。</td></tr>
+              <tr><td>字色</td><td>直接改变文字本身的颜色。</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>线宽不影响高亮——它只作用于绘图工具。</p>
+      </section>
+
+      <section class="docs-section">
+        <h2 class="docs-h2" id="colors">颜色</h2>
+        <p>调色板共六种颜色：<strong>红、琥珀、绿、蓝、紫、橙</strong>，全部对所有用户开放。你可以在设置（调色板）里给颜色改名（最长 12 个字符）——比如标成"待办"或"引用"，让颜色成为你的分类语言。</p>
+      </section>
+
+      <section class="docs-section">
+        <h2 class="docs-h2" id="auto">自动模式</h2>
+        <p>勾选面板上的<strong>自动</strong>，然后只管划选文字：每次划选都会按当前颜色自动高亮，无需任何点击。自动与绘图工具互斥；选中任一绘图工具会自动关闭自动模式。该状态会在浏览器中记住。</p>
+      </section>
+
+      <section class="docs-section">
+        <h2 class="docs-h2" id="editing">编辑与删除</h2>
+        <ul class="docs-list">
+          <li><strong>快捷弹层</strong>——点击已有高亮：换颜色、编辑批注（笔），或删除（垃圾桶）。</li>
+          <li><strong>标注详情</strong>——打开<strong>浏览</strong>（带数字的按钮），点卡片的铅笔：写批注、管理标签、换颜色和样式，或删除。</li>
+          <li><strong>标注管理器</strong>——在管理器的卡片上直接编辑任意高亮的批注和标签。</li>
+        </ul>
+        <p>带批注的高亮与所有标注一样：点批注卡片上的 <strong>✕</strong> 收起卡片，高亮后会留一个小气泡图标——点它即可重新打开批注。参见<a href="annotation-tools.html#popups">批注弹窗</a>。</p>
+      </section>
+
+      <section class="docs-section">
+        <h2 class="docs-h2" id="persistence">高亮如何保持</h2>
+        <p>高亮锚定在它标记的文字上，再次访问页面时自动恢复。Sagitnote 有很强的找回能力：页面轻微变化时，多层回退策略会重新定位你的高亮，小幅改动可以自愈。识别"同一页面"时还会自动忽略 utm 等跟踪参数——从不同入口打开同一篇文章，高亮都在。两点建议：</p>
+        <ul class="docs-list">
+          <li>尽量标稳定的内容——文章、文档、帖子。</li>
+          <li>在重度动态的页面（信息流、虚拟列表）上，偶尔会有高亮无法重新定位；重新标注一次即可。</li>
+        </ul>
+      </section>
+
+
+      <nav class="docs-pager">
+        <div class="docs-pager-prev"><a href="manager-page.html"><span class="docs-pager-label">上一篇</span><span class="docs-pager-title">← 标注管理器</span></a></div>
+        <div class="docs-pager-next"><a href="screenshots-and-image-rects.html"><span class="docs-pager-label">下一篇</span><span class="docs-pager-title">截图与图片矩形 →</span></a></div>
+      </nav>
+    </main>
+
+    <aside class="docs-toc" id="docsToc">
+      <div class="docs-toc-title">本页目录</div>
+      <div id="docsTocList"></div>
+    </aside>
+  </div>
+
+  <footer class="docs-footer">
+    <div class="docs-footer-inner">
+      <span>© 2026 Sagitnote</span>
+      <div class="docs-footer-links">
+        <a href="../../index.html">首页</a>
+        <a href="../../privacy-policy-zh.html">隐私政策</a>
+        <a href="../../terms-of-service-zh.html">服务条款</a>
+        <a href="mailto:service@webnoteshub.com">service@webnoteshub.com</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/docs-nav.js"></script>
+  <script src="../assets/docs.js"></script>
+</body>
+</html>

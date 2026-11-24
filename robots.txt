@@ -1,0 +1,47 @@
+# Sagitnote (webnoteshub.com) — crawl policy
+# 默认全站放行；显式列出 AI 训练/检索爬虫以表明欢迎抓取的立场。
+# 国外：OpenAI / Anthropic / Common Crawl / Perplexity / Google Gemini / Meta / Amazon / Apple
+# 国内：百度（文心）/ 字节（豆包）
+
+User-agent: *
+Disallow:
+
+# --- AI 训练 / 检索爬虫（显式放行） ---
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# --- 国内搜索引擎 / AI ---
+User-agent: Baiduspider
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+Sitemap: https://jiangwb123.github.io/sagitnote-docs/sitemap.xml

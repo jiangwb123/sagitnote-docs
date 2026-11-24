@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cloud Sync — Sagitnote Docs</title>
+  <meta name="description" content="Keep your library backed up and identical on every device — automatically, and with clear recovery when something fails.">
+  <link rel="canonical" href="https://jiangwb123.github.io/sagitnote-docs/docs/en/cloud-sync.html">
+  <link rel="alternate" hreflang="en" href="https://jiangwb123.github.io/sagitnote-docs/docs/en/cloud-sync.html">
+  <link rel="alternate" hreflang="zh" href="https://jiangwb123.github.io/sagitnote-docs/docs/zh/cloud-sync.html">
+  <link rel="alternate" hreflang="x-default" href="https://jiangwb123.github.io/sagitnote-docs/docs/">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../assets/fonts/fonts.css">
+  <link rel="stylesheet" href="../assets/docs.css">
+</head>
+<body class="docs-body" data-doc-id="cloud-sync" data-doc-lang="en">
+
+  <header class="docs-topbar">
+    <div class="docs-topbar-inner">
+      <a class="docs-brand" href="../../index.html">
+        <svg width="26" height="26" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+          <rect width="64" height="64" rx="15" fill="#12875F"/>
+          <g fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 24.8 Q38.6 25.4 39.2 58" stroke-width="4.8"/>
+            <path d="M15.8 48.2 L34.3 29.7" stroke-width="4"/>
+            <rect x="44.43" y="6" width="13.57" height="13.57" rx="1.2" stroke-width="4.4"/>
+          </g>
+          <polygon points="42.3,21.7 38.2,33.6 30.4,25.8" fill="#FFFFFF"/>
+        </svg>
+        <span>Sagitnote</span>
+        <span class="docs-brand-badge">Docs</span>
+      </a>
+      <nav class="docs-topbar-nav">
+        <a class="docs-topbar-link docs-topbar-link--home" href="../../index.html">Home</a>
+        <a class="docs-lang-switch" id="docsLangSwitch" href="../zh/">zh</a>
+        <button class="docs-menu-btn" id="docsMenuBtn" aria-label="Open navigation">
+          <svg viewBox="0 0 24 24" width="18" height="18"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" fill="currentColor"/></svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <div class="docs-layout">
+    <aside class="docs-sidebar" id="docsSidebar">
+      <nav id="docsSidebarNav" aria-label="Docs navigation"></nav>
+    </aside>
+    <div class="docs-shade" id="docsShade"></div>
+
+    <main class="docs-main">
+      <nav class="docs-breadcrumb">
+        <a href="index.html">Docs</a><span class="docs-crumb-sep">›</span><span>Sync &amp; sharing</span><span class="docs-crumb-sep">›</span><span class="docs-crumb-current">Cloud Sync</span>
+      </nav>
+
+      <header class="docs-page-head">
+        <h1 class="docs-page-title">Cloud Sync</h1>
+        <p class="docs-page-lede">Keep your library backed up and identical on every device — automatically, and with clear recovery when something fails.</p>
+      </header>
+
+      <div class="docs-noscript-nav">
+        <strong>Pages:</strong> <a href="index.html">Welcome &amp; Quick Start</a> · <a href="annotation-tools.html">Annotation Tools</a> · <a href="manager-page.html">Annotation Manager</a> · <a href="text-highlights.html">Text Highlights</a> · <a href="screenshots-and-image-rects.html">Screenshots &amp; Image Rectangles</a> · <a href="element-marks-and-frames.html">Element Marks &amp; Embedded Frames</a> · <a href="keyboard-shortcuts.html">Keyboard Shortcuts</a> · <a href="folders-and-favorites.html">Folders &amp; Favorites</a> · <a href="backup-import-export.html">Backup, Import &amp; Export</a> · <a href="cloud-sync.html">Cloud Sync</a> · <a href="sharing-links.html">Sharing Links</a> · <a href="plans-and-limits.html">Plans &amp; Limits</a> · <a href="own-documents.html">Your Own Documents</a> · <a href="annotating-pdfs.html">Annotating PDFs</a> · <a href="snapshots.html">Page Snapshots</a> · <a href="troubleshooting.html">Troubleshooting</a> · <a href="faq.html">FAQ</a> · <a href="contact-support.html">Contact Support</a>
+      </div>
+
+      
+      <section class="docs-section">
+        <h2 class="docs-h2" id="how">How sync works</h2>
+        <p>Cloud sync is enabled by default on every registered account. Everything you annotate — pages, folders, annotations, tags, documents, and snapshots — is backed up to your account. Sign in with the same account on another device and your library comes over; new changes flow both ways automatically.</p>
+        <ul class="docs-list">
+          <li><strong>Automatic</strong> — local changes are pushed automatically (batched, usually within half a minute); updates from your other devices are pulled every few minutes, and also at login or when the manager opens.</li>
+          <li><strong>Manual</strong> — press <strong>Sync now</strong> in the manager header for an immediate round trip with a summary of what was uploaded, downloaded, and updated.</li>
+        </ul>
+      </section>
+
+      <section class="docs-section">
+        <h2 class="docs-h2" id="failures">When something fails</h2>
+        <p>The manager header shows a <strong>sync failures</strong> icon with a counter whenever items could not be uploaded. Open it to see exactly what is pending — each entry shows its type, a content preview, and the reason (for example "snapshot too large"). From there you can:</p>
+        <ul class="docs-list">
+          <li><strong>Retry</strong> a single item, or <strong>Retry all</strong>.</li>
+          <li><strong>Discard</strong> an item — your local data is kept; only the upload is abandoned.</li>
+        </ul>
+        <p>Failed items are retried automatically up to 10 times before they are marked as exhausted.</p>
+      </section>
+
+      <section class="docs-section">
+        <h2 class="docs-h2" id="pauses">Automatic pauses</h2>
+        <p>If the service is temporarily unreachable or returns errors, automatic sync pauses to avoid overwhelming a struggling server and resumes on its own. A manual <strong>Sync now</strong> always goes through and clears the pause as soon as it succeeds. While offline, your data simply stays local — everything created offline is uploaded when connectivity returns.</p>
+      </section>
+
+      <section class="docs-section">
+        <h2 class="docs-h2" id="conflicts">Conflicts</h2>
+        <p>If the same annotation was changed on two devices before a sync, the <strong>latest change wins</strong>. A conflict never loses data silently — the losing change is listed in the sync summary so you can see what happened.</p>
+      </section>
+
+      <section class="docs-section">
+        <h2 class="docs-h2" id="images">Images across devices</h2>
+        <p>Annotated images and screenshots travel with sync and appear in full on your other devices (counted against your cloud storage quota). If storage runs short and an image cannot be uploaded, the annotation on other devices falls back to the original image on the page.</p>
+      </section>
+
+
+      <nav class="docs-pager">
+        <div class="docs-pager-prev"><a href="backup-import-export.html"><span class="docs-pager-label">Previous</span><span class="docs-pager-title">← Backup, Import &amp; Export</span></a></div>
+        <div class="docs-pager-next"><a href="sharing-links.html"><span class="docs-pager-label">Next</span><span class="docs-pager-title">Sharing Links →</span></a></div>
+      </nav>
+    </main>
+
+    <aside class="docs-toc" id="docsToc">
+      <div class="docs-toc-title">On this page</div>
+      <div id="docsTocList"></div>
+    </aside>
+  </div>
+
+  <footer class="docs-footer">
+    <div class="docs-footer-inner">
+      <span>© 2026 Sagitnote</span>
+      <div class="docs-footer-links">
+        <a href="../../index.html">Home</a>
+        <a href="../../privacy-policy.html">Privacy Policy</a>
+        <a href="../../terms-of-service.html">Terms of Service</a>
+        <a href="mailto:service@webnoteshub.com">service@webnoteshub.com</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/docs-nav.js"></script>
+  <script src="../assets/docs.js"></script>
+</body>
+</html>

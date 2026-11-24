@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>元素标记与内嵌区域 — Sagitnote 帮助文档</title>
+  <meta name="description" content="框住整个元素来标注，以及在含内嵌区域的页面上选择要标注的区域。">
+  <link rel="canonical" href="https://jiangwb123.github.io/sagitnote-docs/docs/zh/element-marks-and-frames.html">
+  <link rel="alternate" hreflang="en" href="https://jiangwb123.github.io/sagitnote-docs/docs/en/element-marks-and-frames.html">
+  <link rel="alternate" hreflang="zh" href="https://jiangwb123.github.io/sagitnote-docs/docs/zh/element-marks-and-frames.html">
+  <link rel="alternate" hreflang="x-default" href="https://jiangwb123.github.io/sagitnote-docs/docs/">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../assets/fonts/fonts.css">
+  <link rel="stylesheet" href="../assets/docs.css">
+</head>
+<body class="docs-body" data-doc-id="element-marks-and-frames" data-doc-lang="zh">
+
+  <header class="docs-topbar">
+    <div class="docs-topbar-inner">
+      <a class="docs-brand" href="../../index.html">
+        <svg width="26" height="26" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+          <rect width="64" height="64" rx="15" fill="#12875F"/>
+          <g fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 24.8 Q38.6 25.4 39.2 58" stroke-width="4.8"/>
+            <path d="M15.8 48.2 L34.3 29.7" stroke-width="4"/>
+            <rect x="44.43" y="6" width="13.57" height="13.57" rx="1.2" stroke-width="4.4"/>
+          </g>
+          <polygon points="42.3,21.7 38.2,33.6 30.4,25.8" fill="#FFFFFF"/>
+        </svg>
+        <span>Sagitnote</span>
+        <span class="docs-brand-badge">文档</span>
+      </a>
+      <nav class="docs-topbar-nav">
+        <a class="docs-topbar-link docs-topbar-link--home" href="../../index.html">首页</a>
+        <a class="docs-lang-switch" id="docsLangSwitch" href="../en/">English</a>
+        <button class="docs-menu-btn" id="docsMenuBtn" aria-label="打开导航">
+          <svg viewBox="0 0 24 24" width="18" height="18"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" fill="currentColor"/></svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <div class="docs-layout">
+    <aside class="docs-sidebar" id="docsSidebar">
+      <nav id="docsSidebarNav" aria-label="文档导航"></nav>
+    </aside>
+    <div class="docs-shade" id="docsShade"></div>
+
+    <main class="docs-main">
+      <nav class="docs-breadcrumb">
+        <a href="index.html">帮助文档</a><span class="docs-crumb-sep">›</span><span>标注进阶</span><span class="docs-crumb-sep">›</span><span class="docs-crumb-current">元素标记与内嵌区域</span>
+      </nav>
+
+      <header class="docs-page-head">
+        <h1 class="docs-page-title">元素标记与内嵌区域</h1>
+        <p class="docs-page-lede">框住整个元素来标注，以及在含内嵌区域的页面上选择要标注的区域。</p>
+      </header>
+
+      <div class="docs-noscript-nav">
+        <strong>文档页面:</strong> <a href="index.html">欢迎与快速上手</a> · <a href="annotation-tools.html">网页标注工具</a> · <a href="manager-page.html">标注管理器</a> · <a href="text-highlights.html">文本高亮</a> · <a href="screenshots-and-image-rects.html">截图与图片矩形</a> · <a href="element-marks-and-frames.html">元素标记与内嵌区域</a> · <a href="keyboard-shortcuts.html">快捷键</a> · <a href="folders-and-favorites.html">文件夹与收藏</a> · <a href="backup-import-export.html">备份、导入与导出</a> · <a href="cloud-sync.html">云同步</a> · <a href="sharing-links.html">分享链接</a> · <a href="plans-and-limits.html">版本与限额</a> · <a href="own-documents.html">自建文档</a> · <a href="annotating-pdfs.html">PDF 批注</a> · <a href="snapshots.html">页面快照</a> · <a href="troubleshooting.html">问题排查</a> · <a href="faq.html">常见问题</a> · <a href="contact-support.html">联系支持</a>
+      </div>
+
+      
+      <section class="docs-section">
+        <h2 class="docs-h2" id="element-mark">元素标记</h2>
+        <p><strong>元素标记</strong>标注的是页面的"积木"而不是像素。启用工具后移动鼠标：光标下的元素——按钮、图片、卡片、链接、段落——会出现蓝色描边。点击即用实线边框把它框起来。</p>
+        <ul class="docs-list">
+          <li>标记会记录元素的类型和内容，即使页面重新排版也能稳定跟随。</li>
+          <li>之后悬停标记即可打开常用操作：批注、换色、删除（在分享页上还可回复他人）。</li>
+          <li>批注卡片收起后，标记旁会留一个小气泡图标，点击即可重新打开——桌面设备上悬停气泡还能快速预览。</li>
+          <li>适合"这个按钮坏了""这个价格该更新了"这类反馈，或在长列表里收藏某张特定卡片。</li>
+        </ul>
+      </section>
+
+      <section class="docs-section">
+        <h2 class="docs-h2" id="rect-frame">矩形框</h2>
+        <p><strong>矩形框</strong>在你拖过的任意区域画出虚线矩形——一个"看这里"的框。它会锚定框下的内容，并把框住的文字存为上下文，方便日后找回。边框粗细跟随线宽；之后点击框即可进行批注、换色、回复和删除。</p>
+        <div class="docs-callout docs-callout--note">
+          <span class="docs-callout-icon">ℹ</span>
+          <div class="docs-callout-body">
+            <p>矩形框（短虚线）与页面截图（长虚线 + ✂）：矩形框只是在页面上标记区域；页面截图会把区域截成图片。</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="docs-section">
+        <h2 class="docs-h2" id="zone-select">含内嵌区域的页面</h2>
+        <p>有些页面会在内部嵌入其他文档（iframe）——新闻聚合、仪表盘、门户等。每个内嵌区域都是独立文档，所以 Sagitnote 会先问你要标注哪一个：</p>
+        <ol class="doc-steps">
+          <li>
+            <div class="doc-step-title">选择区域</div>
+            <div class="doc-step-body"><p>每个可标注区域都会显示<strong>「✎ 选择此区域」</strong>按钮，点你要标注的区域（通常是正文）。</p></div>
+          </li>
+          <li>
+            <div class="doc-step-title">正常标注</div>
+            <div class="doc-step-body"><p>所选区域激活，控制面板出现，所有工具都能在该区域内使用。</p></div>
+          </li>
+        </ol>
+        <p>只有页面确实包含多个可标注区域（每个至少 500 × 200 像素）时才会出现选择按钮。普通页面——包括大多数文章——会自动激活，不会多问。</p>
+      </section>
+
+
+      <nav class="docs-pager">
+        <div class="docs-pager-prev"><a href="screenshots-and-image-rects.html"><span class="docs-pager-label">上一篇</span><span class="docs-pager-title">← 截图与图片矩形</span></a></div>
+        <div class="docs-pager-next"><a href="keyboard-shortcuts.html"><span class="docs-pager-label">下一篇</span><span class="docs-pager-title">快捷键 →</span></a></div>
+      </nav>
+    </main>
+
+    <aside class="docs-toc" id="docsToc">
+      <div class="docs-toc-title">本页目录</div>
+      <div id="docsTocList"></div>
+    </aside>
+  </div>
+
+  <footer class="docs-footer">
+    <div class="docs-footer-inner">
+      <span>© 2026 Sagitnote</span>
+      <div class="docs-footer-links">
+        <a href="../../index.html">首页</a>
+        <a href="../../privacy-policy-zh.html">隐私政策</a>
+        <a href="../../terms-of-service-zh.html">服务条款</a>
+        <a href="mailto:service@webnoteshub.com">service@webnoteshub.com</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/docs-nav.js"></script>
+  <script src="../assets/docs.js"></script>
+</body>
+</html>

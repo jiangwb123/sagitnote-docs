@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>标注管理器 — Sagitnote 帮助文档</title>
+  <meta name="description" content="Sagitnote（天箭批注）标注管理器：浏览、搜索、编辑、整理、备份、同步和分享你在网上留下的所有标注。">
+  <link rel="canonical" href="https://jiangwb123.github.io/sagitnote-docs/docs/zh/manager-page.html">
+  <link rel="alternate" hreflang="en" href="https://jiangwb123.github.io/sagitnote-docs/docs/en/manager-page.html">
+  <link rel="alternate" hreflang="zh" href="https://jiangwb123.github.io/sagitnote-docs/docs/zh/manager-page.html">
+  <link rel="alternate" hreflang="x-default" href="https://jiangwb123.github.io/sagitnote-docs/docs/">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../assets/fonts/fonts.css">
+  <link rel="stylesheet" href="../assets/docs.css">
+</head>
+<body class="docs-body" data-doc-id="manager-page" data-doc-lang="zh">
+
+  <header class="docs-topbar">
+    <div class="docs-topbar-inner">
+      <a class="docs-brand" href="../../index.html">
+        <svg width="26" height="26" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+          <rect width="64" height="64" rx="15" fill="#12875F"/>
+          <g fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 24.8 Q38.6 25.4 39.2 58" stroke-width="4.8"/>
+            <path d="M15.8 48.2 L34.3 29.7" stroke-width="4"/>
+            <rect x="44.43" y="6" width="13.57" height="13.57" rx="1.2" stroke-width="4.4"/>
+          </g>
+          <polygon points="42.3,21.7 38.2,33.6 30.4,25.8" fill="#FFFFFF"/>
+        </svg>
+        <span>Sagitnote</span>
+        <span class="docs-brand-badge">文档</span>
+      </a>
+      <nav class="docs-topbar-nav">
+        <a class="docs-topbar-link docs-topbar-link--home" href="../../index.html">首页</a>
+        <a class="docs-lang-switch" id="docsLangSwitch" href="../en/">English</a>
+        <button class="docs-menu-btn" id="docsMenuBtn" aria-label="打开导航">
+          <svg viewBox="0 0 24 24" width="18" height="18"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" fill="currentColor"/></svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <div class="docs-layout">
+    <aside class="docs-sidebar" id="docsSidebar">
+      <nav id="docsSidebarNav" aria-label="文档导航"></nav>
+    </aside>
+    <div class="docs-shade" id="docsShade"></div>
+
+    <main class="docs-main">
+      <nav class="docs-breadcrumb">
+        <a href="index.html">帮助文档</a><span class="docs-crumb-sep">›</span><span>快速上手</span><span class="docs-crumb-sep">›</span><span class="docs-crumb-current">标注管理器</span>
+      </nav>
+
+      <header class="docs-page-head">
+        <h1 class="docs-page-title">标注管理器</h1>
+        <p class="docs-page-lede">你的标注大本营：每个页面、每条高亮、绘图、批注和快照——可浏览、可搜索、可编辑、可备份。</p>
+      </header>
+
+      <section class="docs-section">
+        <h2 class="docs-h2" id="opening">打开管理器</h2>
+        <ul class="docs-list">
+          <li>在任意页面：打开控制面板的<strong>更多（⋯）</strong>菜单 → <strong>标注管理</strong>。</li>
+          <li>从工具栏：点击 Sagitnote 图标 → <strong>标注管理</strong>。</li>
+        </ul>
+        <p>管理器在独立的浏览器标签页中打开。注册并登录过一次后，标注库就保存在本浏览器中——离线时同样可用。</p>
+      </section>
+
+      <section class="docs-section">
+        <h2 class="docs-h2" id="overview">界面总览</h2>
+        <figure class="docs-figure">
+          <img class="docs-figure-img" src="../assets/img/en/manager-overview.png" width="1440" height="900" alt="Sagitnote 标注管理器界面">
+          <figcaption><strong>图 1</strong> — 标注管理器：带搜索与快捷操作的顶栏、文件夹树、页面列表与详情视图。</figcaption>
+        </figure>
+        <ul class="docs-list">
+          <li><strong>顶栏</strong> — 全局搜索、账号信息、<strong>立即同步</strong>和<strong>功能</strong>菜单（导入导出、分享管理、设置等）。</li>
+          <li><strong>左侧边栏</strong> — 文件夹树，含收藏与最近页面。</li>
+          <li><strong>页面列表</strong> — 每个标注过的页面，带标题与标注数量。</li>
+          <li><strong>详情视图</strong> — 选中页面的全部标注，含截图与批注内容。</li>
+        </ul>
+      </section>
+
+      <section class="docs-section">
+        <h2 class="docs-h2" id="browsing">浏览与搜索</h2>
+        <ul class="docs-list">
+          <li>顶栏的<strong>搜索框</strong>能搜索标注的引用文字、批注内容、标签、页面标题与域名，甚至自建文档的正文；还可以叠加标签过滤。</li>
+          <li>点侧边栏的文件夹收窄页面列表；点星形按钮可切换<strong>只看收藏</strong>。</li>
+          <li>选中页面查看它的全部标注，可按类型筛选、按位置或时间排序。</li>
+        </ul>
+      </section>
+
+      <section class="docs-section">
+        <h2 class="docs-h2" id="editing">查看与编辑标注</h2>
+        <p>选中页面即可浏览它的标注。每张卡片显示类型、内容预览、批注、标签和作者（当页面有多人标注时）。卡片上可以打开原页面、编辑标注的<strong>批注和标签</strong>，或删除。</p>
+        <div class="docs-callout docs-callout--note">
+          <span class="docs-callout-icon">ℹ</span>
+          <div class="docs-callout-body">
+            <p>颜色、样式和位置的修改要在页面本身完成：打开页面后用标注的快捷弹层或列表抽屉的"标注详情"。在任何一端做的修改都会同步——下次访问页面看到的就是更新后的标注。</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="docs-section">
+        <h2 class="docs-h2" id="folders">文件夹与收藏</h2>
+        <p>点侧边栏的 ➕ 按钮新建文件夹（支持多级子目录），按项目或主题整理页面。移动页面用页面的 <strong>⋯</strong> 菜单、文件夹右键菜单或<strong>批量模式</strong>（多选后移动）。删除文件夹不会丢页面——里面的页面会变成<strong>未分类</strong>。给页面加星（面板更多菜单 → <strong>收藏</strong>，或列表里的 ★），再用 ☆ 按钮筛选只看收藏。</p>
+      </section>
+
+      <section class="docs-section">
+        <h2 class="docs-h2" id="import-export">导入与导出</h2>
+        <p>备份标注库或在多台电脑之间迁移：打开<strong>功能</strong> → <strong>导入导出</strong>。</p>
+        <ul class="docs-list">
+          <li><strong>导出当前页面</strong> — 一个页面的标注与内容。</li>
+          <li><strong>导出全部</strong> — 完整备份：文件夹、页面、标注、标签、文档、快照与图片，打包成一个压缩文件。</li>
+          <li><strong>增量导出</strong> — 把标注库以 Markdown 写入你选择的文件夹；以后再次运行时只更新变化的部分。适合维护一份始终最新的 Markdown 副本（如 Obsidian）。</li>
+          <li><strong>导入</strong> — 从导出文件恢复；可选择跳过已有标注或覆盖。</li>
+        </ul>
+        <p>导出格式：免费版支持 JSON、CSV、Markdown；Pro 额外支持 HTML。</p>
+      </section>
+
+      <section class="docs-section">
+        <h2 class="docs-h2" id="sync">云同步</h2>
+        <p>登录后，标注库会备份到你的账号，并在所有登录同一账号的设备间保持一致（免费版与 Pro 均受每日新建限额约束，Pro 额度更高）。</p>
+        <ul class="docs-list">
+          <li><strong>自动同步</strong> — 本地改动会自动推送（聚合后通常半分钟内）；其他设备的更新每隔几分钟自动拉取，登录和打开管理器时也会同步。</li>
+          <li><strong>立即同步</strong> — 立刻推送并拉取；也能解除自动同步的暂停。</li>
+          <li><strong>同步失败</strong> — 顶栏图标列出上传失败的条目（含原因），可逐条重试，也可全部重试；失败条目会自动重试最多 10 次。</li>
+          <li>在另一台设备登录同一账号，即可把标注库带过去。</li>
+        </ul>
+        <p>服务暂时不可达时自动同步会暂停并自行恢复；冲突自动解决（以最新修改为准）并在同步摘要中报告。</p>
+      </section>
+
+      <section class="docs-section">
+        <h2 class="docs-h2" id="sharing">分享</h2>
+        <p>把自建文档的标注分享给别人：打开该文档（或文档快照），更多（⋯）→ <strong>分享批注</strong>。选择接收方能做什么——<strong>查看、标注、回复、编辑</strong>——可选为链接设置访问口令，并指定有效期（1–30 天）。任何人用链接即可在普通浏览器中查看，无需安装扩展。</p>
+        <p>打开<strong>功能</strong> → <strong>分享管理</strong>管理已分享的内容：复制链接、调整权限或有效期、<strong>重新生成</strong>链接（旧链接立即失效）、停用或删除分享，并查看互动人数。协作者的回复会在你打开页面时直接显示在页面上。</p>
+      </section>
+
+      <section class="docs-section">
+        <h2 class="docs-h2" id="feature-menu">功能菜单</h2>
+        <figure class="docs-figure">
+          <img class="docs-figure-img" src="../assets/img/en/manager-feature-menu.png" width="1440" height="900" alt="标注管理器的功能菜单">
+          <figcaption><strong>图 2</strong> — 功能菜单：我的信息、新建文档、从图片新建文档、导入导出、分享管理、设置、标注开关、反馈、帮助与退出。</figcaption>
+        </figure>
+        <div class="doc-table-wrap">
+          <table class="doc-table">
+            <thead><tr><th>菜单项</th><th>作用</th></tr></thead>
+            <tbody>
+              <tr><td>我的信息</td><td>查看账号信息与用量。</td></tr>
+              <tr><td>新建文档</td><td>创建一篇自建文档（见<a href="own-documents.html">自建文档</a>）。</td></tr>
+              <tr><td>从图片新建文档</td><td>把本地图片直接汇成一篇可标注的文档。</td></tr>
+              <tr><td>导入导出</td><td>备份与恢复标注（见上文）。</td></tr>
+              <tr><td>分享管理</td><td>管理分享链接。</td></tr>
+              <tr><td>设置</td><td>打开扩展设置（调色板、图片批注、显示、数据管理、主题、快捷键）。</td></tr>
+              <tr><td>标注开关</td><td>临时显示/隐藏所有标注。</td></tr>
+              <tr><td>反馈与建议</td><td>向团队提交反馈。</td></tr>
+              <tr><td>帮助文档</td><td>打开本帮助文档。</td></tr>
+              <tr><td>退出并清空</td><td>退出登录；可选择同时清空本机的本地标注数据。</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="docs-section">
+        <h2 class="docs-h2" id="help">获取帮助</h2>
+        <p>遇到问题？通过功能菜单里的<strong>反馈与建议</strong>联系我们，或发邮件到 <a href="mailto:service@webnoteshub.com">service@webnoteshub.com</a>。快捷修复方案见<strong>问题排查</strong>与<strong>常见问题</strong>页面。</p>
+      </section>
+
+      <nav class="docs-pager">
+        <div class="docs-pager-prev">
+          <a href="annotation-tools.html">
+            <span class="docs-pager-label">上一篇</span>
+            <span class="docs-pager-title">← 网页标注工具</span>
+          </a>
+        </div>
+        <div class="docs-pager-next">
+          <a href="text-highlights.html">
+            <span class="docs-pager-label">下一篇</span>
+            <span class="docs-pager-title">文本高亮 →</span>
+          </a>
+        </div>
+      </nav>
+    </main>
+
+    <aside class="docs-toc" id="docsToc">
+      <div class="docs-toc-title">本页目录</div>
+      <div id="docsTocList"></div>
+    </aside>
+  </div>
+
+  <footer class="docs-footer">
+    <div class="docs-footer-inner">
+      <span>© 2026 Sagitnote</span>
+      <div class="docs-footer-links">
+        <a href="../../index.html">首页</a>
+        <a href="../../privacy-policy-zh.html">隐私政策</a>
+        <a href="../../terms-of-service-zh.html">服务条款</a>
+        <a href="mailto:service@webnoteshub.com">service@webnoteshub.com</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/docs-nav.js"></script>
+  <script src="../assets/docs.js"></script>
+</body>
+</html>

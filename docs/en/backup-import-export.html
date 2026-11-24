@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Backup, Import &amp; Export — Sagitnote Docs</title>
+  <meta name="description" content="Take your annotations anywhere: full backups, per-page exports, incremental Markdown copies, and importing on another machine.">
+  <link rel="canonical" href="https://jiangwb123.github.io/sagitnote-docs/docs/en/backup-import-export.html">
+  <link rel="alternate" hreflang="en" href="https://jiangwb123.github.io/sagitnote-docs/docs/en/backup-import-export.html">
+  <link rel="alternate" hreflang="zh" href="https://jiangwb123.github.io/sagitnote-docs/docs/zh/backup-import-export.html">
+  <link rel="alternate" hreflang="x-default" href="https://jiangwb123.github.io/sagitnote-docs/docs/">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../assets/fonts/fonts.css">
+  <link rel="stylesheet" href="../assets/docs.css">
+</head>
+<body class="docs-body" data-doc-id="backup-import-export" data-doc-lang="en">
+
+  <header class="docs-topbar">
+    <div class="docs-topbar-inner">
+      <a class="docs-brand" href="../../index.html">
+        <svg width="26" height="26" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+          <rect width="64" height="64" rx="15" fill="#12875F"/>
+          <g fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 24.8 Q38.6 25.4 39.2 58" stroke-width="4.8"/>
+            <path d="M15.8 48.2 L34.3 29.7" stroke-width="4"/>
+            <rect x="44.43" y="6" width="13.57" height="13.57" rx="1.2" stroke-width="4.4"/>
+          </g>
+          <polygon points="42.3,21.7 38.2,33.6 30.4,25.8" fill="#FFFFFF"/>
+        </svg>
+        <span>Sagitnote</span>
+        <span class="docs-brand-badge">Docs</span>
+      </a>
+      <nav class="docs-topbar-nav">
+        <a class="docs-topbar-link docs-topbar-link--home" href="../../index.html">Home</a>
+        <a class="docs-lang-switch" id="docsLangSwitch" href="../zh/">zh</a>
+        <button class="docs-menu-btn" id="docsMenuBtn" aria-label="Open navigation">
+          <svg viewBox="0 0 24 24" width="18" height="18"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" fill="currentColor"/></svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <div class="docs-layout">
+    <aside class="docs-sidebar" id="docsSidebar">
+      <nav id="docsSidebarNav" aria-label="Docs navigation"></nav>
+    </aside>
+    <div class="docs-shade" id="docsShade"></div>
+
+    <main class="docs-main">
+      <nav class="docs-breadcrumb">
+        <a href="index.html">Docs</a><span class="docs-crumb-sep">›</span><span>Organizing &amp; backup</span><span class="docs-crumb-sep">›</span><span class="docs-crumb-current">Backup, Import &amp; Export</span>
+      </nav>
+
+      <header class="docs-page-head">
+        <h1 class="docs-page-title">Backup, Import &amp; Export</h1>
+        <p class="docs-page-lede">Take your annotations anywhere: full backups, per-page exports, incremental Markdown copies, and importing on another machine.</p>
+      </header>
+
+      <div class="docs-noscript-nav">
+        <strong>Pages:</strong> <a href="index.html">Welcome &amp; Quick Start</a> · <a href="annotation-tools.html">Annotation Tools</a> · <a href="manager-page.html">Annotation Manager</a> · <a href="text-highlights.html">Text Highlights</a> · <a href="screenshots-and-image-rects.html">Screenshots &amp; Image Rectangles</a> · <a href="element-marks-and-frames.html">Element Marks &amp; Embedded Frames</a> · <a href="keyboard-shortcuts.html">Keyboard Shortcuts</a> · <a href="folders-and-favorites.html">Folders &amp; Favorites</a> · <a href="backup-import-export.html">Backup, Import &amp; Export</a> · <a href="cloud-sync.html">Cloud Sync</a> · <a href="sharing-links.html">Sharing Links</a> · <a href="plans-and-limits.html">Plans &amp; Limits</a> · <a href="own-documents.html">Your Own Documents</a> · <a href="annotating-pdfs.html">Annotating PDFs</a> · <a href="snapshots.html">Page Snapshots</a> · <a href="troubleshooting.html">Troubleshooting</a> · <a href="faq.html">FAQ</a> · <a href="contact-support.html">Contact Support</a>
+      </div>
+
+      
+      <section class="docs-section">
+        <h2 class="docs-h2" id="export">Exporting</h2>
+        <p>All export options live in the manager's <strong>Features → Import / Export</strong> menu. You choose a target folder and a format — <strong>JSON, CSV, or Markdown</strong> on the free plan; <strong>Pro adds HTML</strong>.</p>
+        <ul class="docs-list">
+          <li><strong>Export current page</strong> — exports the annotations of the page you are viewing, together with its content.</li>
+          <li><strong>Export all</strong> — a complete backup in one compressed file: folders, pages, annotations, tags, documents, snapshots, and images. Keep it somewhere safe; it can be fully restored.</li>
+          <li><strong>Incremental export</strong> — writes your library as <strong>Markdown</strong> into a folder you choose, mirroring your folder structure. Run it again later and only new, changed, moved, or deleted items are updated — ideal for keeping an Obsidian vault or notes folder in sync with your highlights.</li>
+        </ul>
+      </section>
+
+      <section class="docs-section">
+        <h2 class="docs-h2" id="import">Importing</h2>
+        <p><strong>Features → Import / Export → Import</strong> accepts files exported by Sagitnote (JSON and compressed backups — including a full "Export all" file). You choose a strategy:</p>
+        <ul class="docs-list">
+          <li><strong>Skip existing</strong> (default) — only new annotations are imported; nothing already in your library is touched.</li>
+          <li><strong>Overwrite</strong> — imported data replaces matching existing annotations.</li>
+        </ul>
+        <p>After importing, folders, documents, and counts refresh automatically. A summary tells you how many annotations were inserted and how many were skipped.</p>
+        <div class="docs-callout docs-callout--tip">
+          <span class="docs-callout-icon">💡</span>
+          <div class="docs-callout-body">
+            <p>Moving to a new computer? Either run Export all and import it there, or — once you're signed in — simply sign in on the new machine and press <strong>Sync now</strong>.</p>
+          </div>
+        </div>
+      </section>
+
+
+      <nav class="docs-pager">
+        <div class="docs-pager-prev"><a href="folders-and-favorites.html"><span class="docs-pager-label">Previous</span><span class="docs-pager-title">← Folders &amp; Favorites</span></a></div>
+        <div class="docs-pager-next"><a href="cloud-sync.html"><span class="docs-pager-label">Next</span><span class="docs-pager-title">Cloud Sync →</span></a></div>
+      </nav>
+    </main>
+
+    <aside class="docs-toc" id="docsToc">
+      <div class="docs-toc-title">On this page</div>
+      <div id="docsTocList"></div>
+    </aside>
+  </div>
+
+  <footer class="docs-footer">
+    <div class="docs-footer-inner">
+      <span>© 2026 Sagitnote</span>
+      <div class="docs-footer-links">
+        <a href="../../index.html">Home</a>
+        <a href="../../privacy-policy.html">Privacy Policy</a>
+        <a href="../../terms-of-service.html">Terms of Service</a>
+        <a href="mailto:service@webnoteshub.com">service@webnoteshub.com</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/docs-nav.js"></script>
+  <script src="../assets/docs.js"></script>
+</body>
+</html>

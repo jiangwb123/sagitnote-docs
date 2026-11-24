@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Annotation Tools — Sagitnote Docs</title>
+  <meta name="description" content="A tour of the Sagitnote control panel: text highlights, arrows, rectangle frames, screenshots, freehand lines, text notes, element marks, the annotations drawer, and the More menu.">
+  <link rel="canonical" href="https://jiangwb123.github.io/sagitnote-docs/docs/en/annotation-tools.html">
+  <link rel="alternate" hreflang="en" href="https://jiangwb123.github.io/sagitnote-docs/docs/en/annotation-tools.html">
+  <link rel="alternate" hreflang="zh" href="https://jiangwb123.github.io/sagitnote-docs/docs/zh/annotation-tools.html">
+  <link rel="alternate" hreflang="x-default" href="https://jiangwb123.github.io/sagitnote-docs/docs/">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../assets/fonts/fonts.css">
+  <link rel="stylesheet" href="../assets/docs.css">
+</head>
+<body class="docs-body" data-doc-id="annotation-tools" data-doc-lang="en">
+
+  <header class="docs-topbar">
+    <div class="docs-topbar-inner">
+      <a class="docs-brand" href="../../index.html">
+        <svg width="26" height="26" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+          <rect width="64" height="64" rx="15" fill="#12875F"/>
+          <g fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 24.8 Q38.6 25.4 39.2 58" stroke-width="4.8"/>
+            <path d="M15.8 48.2 L34.3 29.7" stroke-width="4"/>
+            <rect x="44.43" y="6" width="13.57" height="13.57" rx="1.2" stroke-width="4.4"/>
+          </g>
+          <polygon points="42.3,21.7 38.2,33.6 30.4,25.8" fill="#FFFFFF"/>
+        </svg>
+        <span>Sagitnote</span>
+        <span class="docs-brand-badge">Docs</span>
+      </a>
+      <nav class="docs-topbar-nav">
+        <a class="docs-topbar-link docs-topbar-link--home" href="../../index.html">Home</a>
+        <a class="docs-lang-switch" id="docsLangSwitch" href="../zh/">zh</a>
+        <button class="docs-menu-btn" id="docsMenuBtn" aria-label="Open navigation">
+          <svg viewBox="0 0 24 24" width="18" height="18"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" fill="currentColor"/></svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <div class="docs-layout">
+    <aside class="docs-sidebar" id="docsSidebar">
+      <nav id="docsSidebarNav" aria-label="Docs navigation"></nav>
+    </aside>
+    <div class="docs-shade" id="docsShade"></div>
+
+    <main class="docs-main">
+      <nav class="docs-breadcrumb">
+        <a href="index.html">Docs</a><span class="docs-crumb-sep">›</span><span>Getting started</span><span class="docs-crumb-sep">›</span><span class="docs-crumb-current">Annotation Tools</span>
+      </nav>
+
+      <header class="docs-page-head">
+        <h1 class="docs-page-title">Annotation Tools</h1>
+        <p class="docs-page-lede">Everything in the floating control panel: highlights, drawing tools, screenshots, notes, and the drawer that keeps your page's annotations at hand.</p>
+      </header>
+
+      <section class="docs-section">
+        <h2 class="docs-h2" id="panel">The control panel at a glance</h2>
+        <p>When Sagitnote is active on a page, the control panel floats above the content. Drag the handle on its left edge to move it anywhere; click <strong>—</strong> to minimize it to a small tab while you read.</p>
+        <figure class="docs-figure">
+          <img class="docs-figure-img docs-figure-img--natural" src="../assets/img/en/tools-toolbar-anatomy.png" width="90" height="735" alt="The Sagitnote control panel toolbar">
+          <figcaption><strong>Fig. 1</strong> — The control panel: drag handle, minimize, undo, tool buttons, line width, color, styles, Auto, Browse, and the More (⋯) menu.</figcaption>
+        </figure>
+        <div class="doc-table-wrap">
+          <table class="doc-table">
+            <thead><tr><th>Part</th><th>What it does</th></tr></thead>
+            <tbody>
+              <tr><td>⠿ handle</td><td>Drag to move the panel anywhere on the page. Drag it past the right or bottom edge and the panel switches between horizontal and vertical layouts automatically.</td></tr>
+              <tr><td>— minimize</td><td>Collapse the panel to a small tab; click again to restore.</td></tr>
+              <tr><td>↶ undo</td><td>Undo the annotation you just created (<kbd class="docs-kbd">Ctrl</kbd>+<kbd class="docs-kbd">Z</kbd> works too).</td></tr>
+              <tr><td>Tool buttons</td><td>Arrow, Flag, Rectangle Frame, Image Rectangle, Page Screenshot, Freehand Line, Text Note, Element Mark.</td></tr>
+              <tr><td>Width</td><td>Stroke thickness (1–5 px) for drawing tools; also sets the font size of text notes.</td></tr>
+              <tr><td><strong>A</strong> color</td><td>The current color used by new annotations.</td></tr>
+              <tr><td>Style group</td><td>Text highlight styles: fill, border, underline, wavy, text color.</td></tr>
+              <tr><td>Auto</td><td>Highlight every text selection automatically.</td></tr>
+              <tr><td>Browse (count)</td><td>Open the drawer listing all annotations on this page.</td></tr>
+              <tr><td>💬 popups toggle</td><td>Close every open annotation popup at once (see <a href="#popups">Annotation popups</a>).</td></tr>
+              <tr><td>⋯ More</td><td>Page note, favorites, import/export, manager, sharing, snapshots, settings, help.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="docs-section">
+        <h2 class="docs-h2" id="highlights">Text highlights</h2>
+        <p>Select any text on the page and a color bar appears next to the selection. Click a color dot and the text is highlighted instantly using the style currently selected in the panel's <strong>style group</strong>. The bar stays open — its lit-up <strong>pen</strong> button lets you add a note and tags right away, and choose whether the note appears on hover or stays always visible. Click an existing highlight to open a quick popup: change its color, edit its note (pen), or delete it. To change the style, open <strong>Browse</strong> and edit the annotation in its Annotation Detail.</p>
+        <p>Highlight styles available from the style group on the panel:</p>
+        <ul class="docs-list">
+          <li><strong>Fill</strong> — classic marker behind the text.</li>
+          <li><strong>Border</strong> — a rectangle outline around the selection.</li>
+          <li><strong>Underline</strong> — a straight line under the text.</li>
+          <li><strong>Wavy</strong> — a wavy line under the text (great for “revisit this”).</li>
+          <li><strong>Text color</strong> — recolors the characters themselves.</li>
+        </ul>
+        <div class="docs-callout docs-callout--tip">
+          <span class="docs-callout-icon">💡</span>
+          <div class="docs-callout-body">
+            <p>Long articles: turn on <strong>Auto</strong> once, then simply select text — each selection is highlighted with the current color and style without extra clicks. Turn Auto off when you are done.</p>
+          </div>
+        </div>
+        <figure class="docs-figure">
+          <img class="docs-figure-img" src="../assets/img/en/getting-started-picker.png" width="1440" height="900" alt="A text selection with the Sagitnote style picker showing six colors">
+          <figcaption><strong>Fig. 2</strong> — A text selection with the color bar: click a color dot and the highlight is applied instantly.</figcaption>
+        </figure>
+        <p>Highlights survive page reloads: Sagitnote re-applies them when you come back to the page (as long as the page content is still there).</p>
+      </section>
+
+      <section class="docs-section">
+        <h2 class="docs-h2" id="drawing-tools">Drawing tools</h2>
+        <p>Pick a tool on the panel, then interact with the page. Click the tool again (or pick another tool) to put it away — only one tool is active at a time. While a tool is active, the element under your cursor is outlined so you can see exactly what you are pointing at.</p>
+        <p>Every drawing is an annotation — it appears in the drawer, can be edited, and is restored on reload.</p>
+
+        <h3 class="docs-h3" id="tool-arrow">Arrow</h3>
+        <p>Drag from where the arrow starts to where it should point. Use it to call out a specific spot in a chart, paragraph, or layout.</p>
+
+        <h3 class="docs-h3" id="tool-flag">Flag</h3>
+        <p>Click anywhere to plant a small flag marker. Click the flag to attach or read a note — useful as a visual bookmark on long pages.</p>
+
+        <h3 class="docs-h3" id="tool-rect-frame">Rectangle Frame</h3>
+        <p>Drag to draw a rectangle outline around any region — a paragraph, a price, a photo — to say “look here”.</p>
+
+        <h3 class="docs-h3" id="tool-image-rect">Image Rectangle</h3>
+        <p>Works on images only: when this tool is active, hover over a picture (the cursor becomes a crosshair) and drag to draw a solid rectangle over it. Sagitnote remembers the image, and — with <strong>auto-save images</strong> enabled in Settings (on by default) — keeps a local copy of it so your mark survives even if the image later changes or goes offline.</p>
+
+        <h3 class="docs-h3" id="tool-page-screenshot">Page Screenshot</h3>
+        <p>Drag to select any region of the page — Sagitnote captures it as an image annotation. If the region extends beyond the visible screen, the page is scrolled and stitched automatically, so tall sections can be captured in one drag. The capture is stored with your annotations and shown as a thumbnail in the drawer and the Annotation Manager.</p>
+
+        <h3 class="docs-h3" id="tool-freehand">Freehand Line</h3>
+        <p>Draw freely with the mouse or a stylus — circle a typo, underline a phrase, sketch a shape.</p>
+
+        <h3 class="docs-h3" id="tool-text-note">Text Note</h3>
+        <p>Click a spot on the page and type. The note stays pinned where you put it, like a sticky note.</p>
+
+        <h3 class="docs-h3" id="tool-element-mark">Element Mark</h3>
+        <p>Move your cursor around the page and Sagitnote outlines whole elements — a button, an image, a card, a link. Click to mark the element itself. Element marks are more robust than drawings when a page's layout shifts.</p>
+
+        <figure class="docs-figure">
+          <img class="docs-figure-img" src="../assets/img/en/tools-draw-examples.png" width="1440" height="900" alt="A page with an arrow, rectangle, and freehand drawing">
+          <figcaption><strong>Fig. 3</strong> — Drawing tools in action: an arrow, a rectangle frame, and a freehand circle.</figcaption>
+        </figure>
+      </section>
+
+      <section class="docs-section">
+        <h2 class="docs-h2" id="styles">Colors and styles</h2>
+        <p>The panel's color button opens the palette — red, amber, green, blue, violet, orange — shared by highlights and drawings. All six colors are available to everyone. In Settings (Palette section) you can rename colors (up to 12 characters) and adjust their values to build your own color-coding system.</p>
+        <p><strong>Line width</strong> (1–5 px) controls drawing strokes, arrowheads, and rectangle borders — it also sets the font size of text notes. It does not affect text highlights; those are shaped by the <strong>style group</strong> (fill, border, underline, wavy, text color) instead. Your last used color and style are remembered for new annotations.</p>
+      </section>
+
+      <section class="docs-section">
+        <h2 class="docs-h2" id="popups">Annotation popups</h2>
+        <p>A note attached to any annotation can appear in two ways: as a <strong>hover tooltip</strong>, or as an <strong>always-visible card</strong> pinned to the page. Always-visible cards have a <strong>✕</strong> button in their top-right corner — click it to get the card out of the way. Closing only lasts for the current visit: reload the page and the card is back.</p>
+        <p>Whenever a note popup is not on screen, marks that carry a note show a small <strong>bubble icon</strong> in their place:</p>
+        <ul class="docs-list">
+          <li><strong>Text highlights</strong> — the bubble sits inline, right after the highlighted text.</li>
+          <li><strong>Drawing marks</strong> (arrow, rectangle frame, screenshot, flag, freehand, element mark) — the bubble hangs next to the mark, usually at its top-right corner.</li>
+          <li><strong>Image annotation</strong> (whole-image note) — the pen icon next to the image doubles as the bubble.</li>
+        </ul>
+        <p>Click the bubble to reopen the note. On a computer you can also <strong>hover</strong> the bubble for a quick preview card — note, author, and tags at a glance. (Touch screens skip the hover preview, so tapping always opens the full popup.)</p>
+        <p>To hide every open card at once, use the <strong>💬 popups toggle</strong> on the panel — "Close all annotation popups". The toggle is remembered, so if you prefer a clean page, it stays that way on your next visit. Editing a note and saving reopens its card so you can see the result.</p>
+      </section>
+
+      <section class="docs-section">
+        <h2 class="docs-h2" id="drawer">The annotations drawer</h2>
+        <p>The <strong>Browse</strong> button (showing the number of annotations on this page) opens the drawer — your working list for the current page:</p>
+        <ul class="docs-list">
+          <li><strong>Search</strong> — filter annotations by their note text.</li>
+          <li><strong>List</strong> — every annotation with a type icon; click one to jump to it on the page.</li>
+          <li><strong>Show all / Hide all</strong> — toggle the visibility of all annotations on the page.</li>
+          <li><strong>Edit</strong> — open an annotation's detail to change its color or style, add tags, write a note, or delete it.</li>
+        </ul>
+        <p>In Settings you can choose how the drawer opens: <strong>Push</strong> compresses the page to make room, while <strong>Overlay</strong> floats the drawer above the page. The button in the drawer's header toggles between the two on the spot, and your choice is remembered.</p>
+        <figure class="docs-figure">
+          <img class="docs-figure-img" src="../assets/img/en/tools-drawer-browse.png" width="1440" height="900" alt="The annotations drawer open on a page">
+          <figcaption><strong>Fig. 4</strong> — The drawer opens on the right and lists every annotation on the page, with search and show/hide actions.</figcaption>
+        </figure>
+        <figure class="docs-figure">
+          <img class="docs-figure-img" src="../assets/img/en/tools-drawer-detail.png" width="1440" height="900" alt="The Annotation Detail panel with type, color, style, content, tags and note fields">
+          <figcaption><strong>Fig. 5</strong> — The Annotation Detail: type, color, style, the quoted content, tags, your note, and the delete/save actions.</figcaption>
+        </figure>
+      </section>
+
+      <section class="docs-section">
+        <h2 class="docs-h2" id="more-menu">The More (⋯) menu</h2>
+        <p>The More menu collects page-level actions:</p>
+        <div class="doc-table-wrap">
+          <table class="doc-table">
+            <thead><tr><th>Item</th><th>What it does</th></tr></thead>
+            <tbody>
+              <tr><td>📝 Page note</td><td>Attach a free-form note to the whole page — a summary or reminder for your next visit.</td></tr>
+              <tr><td>Add to favorites</td><td>Star the page so it is easy to find in the Annotation Manager.</td></tr>
+              <tr><td>Export</td><td>Export this page's annotations (and content) as a file.</td></tr>
+              <tr><td>Import</td><td>Import annotations from an exported file.</td></tr>
+              <tr><td>Annotation Manager</td><td>Open your full library — all pages, folders, and settings.</td></tr>
+              <tr><td>Share annotations</td><td>Share this document's annotations with others via a link (available on both Free and Pro).</td></tr>
+              <tr><td>Save snapshot</td><td>Save a snapshot copy of the page so its content is preserved even if the original changes.</td></tr>
+              <tr><td>Generate Modification Prompts</td><td>Collect all annotations on the page as structured prompts — handy when you plan to hand the feedback to a developer or an AI coding tool.</td></tr>
+              <tr><td>Settings</td><td>Open the extension settings.</td></tr>
+              <tr><td>Annotation</td><td>Temporarily show/hide all Sagitnote annotations (toggle).</td></tr>
+              <tr><td>Feedback &amp; Suggestions</td><td>Tell us what works and what doesn't.</td></tr>
+              <tr><td>Help &amp; docs</td><td>Open this documentation.</td></tr>
+              <tr><td>Upgrade Pro <span class="doc-badge doc-badge--pro">Pro</span></td><td>Upgrade your plan, check quotas, and see repeat-purchase previews.</td></tr>
+              <tr><td>Sign in</td><td>Shown only when you are signed out; opens the sign-in/registration page. To sign out, use the Settings page or the Annotation Manager.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <figure class="docs-figure">
+          <img class="docs-figure-img" src="../assets/img/en/tools-more-menu.png" width="1440" height="900" alt="The More menu of the control panel">
+          <figcaption><strong>Fig. 6</strong> — The More menu with page-level actions.</figcaption>
+        </figure>
+      </section>
+
+      <section class="docs-section">
+        <h2 class="docs-h2" id="undo-delete">Undo and delete</h2>
+        <p>Just made a mistake? The panel's <strong>↶ Undo</strong> button (or <kbd class="docs-kbd">Ctrl</kbd>+<kbd class="docs-kbd">Z</kbd>) removes the annotations you just created, one after another, until the stack is empty. Note that undo only covers creation — deletions cannot be undone. You can delete any annotation from its quick popup, its hover toolbar, or the drawer.</p>
+      </section>
+
+      <nav class="docs-pager">
+        <div class="docs-pager-prev">
+          <a href="index.html">
+            <span class="docs-pager-label">Previous</span>
+            <span class="docs-pager-title">← Welcome &amp; Quick Start</span>
+          </a>
+        </div>
+        <div class="docs-pager-next">
+          <a href="manager-page.html">
+            <span class="docs-pager-label">Next</span>
+            <span class="docs-pager-title">Annotation Manager →</span>
+          </a>
+        </div>
+      </nav>
+    </main>
+
+    <aside class="docs-toc" id="docsToc">
+      <div class="docs-toc-title">On this page</div>
+      <div id="docsTocList"></div>
+    </aside>
+  </div>
+
+  <footer class="docs-footer">
+    <div class="docs-footer-inner">
+      <span>© 2026 Sagitnote</span>
+      <div class="docs-footer-links">
+        <a href="../../index.html">Home</a>
+        <a href="../../privacy-policy.html">Privacy Policy</a>
+        <a href="../../terms-of-service.html">Terms of Service</a>
+        <a href="mailto:service@webnoteshub.com">service@webnoteshub.com</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/docs-nav.js"></script>
+  <script src="../assets/docs.js"></script>
+</body>
+</html>

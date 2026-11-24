@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>问题排查 — Sagitnote 帮助文档</title>
+  <meta name="description" content="最常见情况的快速修复：标注不显示、同步暂停、登录过期等。">
+  <link rel="canonical" href="https://jiangwb123.github.io/sagitnote-docs/docs/zh/troubleshooting.html">
+  <link rel="alternate" hreflang="en" href="https://jiangwb123.github.io/sagitnote-docs/docs/en/troubleshooting.html">
+  <link rel="alternate" hreflang="zh" href="https://jiangwb123.github.io/sagitnote-docs/docs/zh/troubleshooting.html">
+  <link rel="alternate" hreflang="x-default" href="https://jiangwb123.github.io/sagitnote-docs/docs/">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../assets/fonts/fonts.css">
+  <link rel="stylesheet" href="../assets/docs.css">
+</head>
+<body class="docs-body" data-doc-id="troubleshooting" data-doc-lang="zh">
+
+  <header class="docs-topbar">
+    <div class="docs-topbar-inner">
+      <a class="docs-brand" href="../../index.html">
+        <svg width="26" height="26" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+          <rect width="64" height="64" rx="15" fill="#12875F"/>
+          <g fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 24.8 Q38.6 25.4 39.2 58" stroke-width="4.8"/>
+            <path d="M15.8 48.2 L34.3 29.7" stroke-width="4"/>
+            <rect x="44.43" y="6" width="13.57" height="13.57" rx="1.2" stroke-width="4.4"/>
+          </g>
+          <polygon points="42.3,21.7 38.2,33.6 30.4,25.8" fill="#FFFFFF"/>
+        </svg>
+        <span>Sagitnote</span>
+        <span class="docs-brand-badge">文档</span>
+      </a>
+      <nav class="docs-topbar-nav">
+        <a class="docs-topbar-link docs-topbar-link--home" href="../../index.html">首页</a>
+        <a class="docs-lang-switch" id="docsLangSwitch" href="../en/">English</a>
+        <button class="docs-menu-btn" id="docsMenuBtn" aria-label="打开导航">
+          <svg viewBox="0 0 24 24" width="18" height="18"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" fill="currentColor"/></svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <div class="docs-layout">
+    <aside class="docs-sidebar" id="docsSidebar">
+      <nav id="docsSidebarNav" aria-label="文档导航"></nav>
+    </aside>
+    <div class="docs-shade" id="docsShade"></div>
+
+    <main class="docs-main">
+      <nav class="docs-breadcrumb">
+        <a href="index.html">帮助文档</a><span class="docs-crumb-sep">›</span><span>帮助</span><span class="docs-crumb-sep">›</span><span class="docs-crumb-current">问题排查</span>
+      </nav>
+
+      <header class="docs-page-head">
+        <h1 class="docs-page-title">问题排查</h1>
+        <p class="docs-page-lede">最常见情况的快速修复：标注不显示、同步暂停、登录过期等。</p>
+      </header>
+
+      <div class="docs-noscript-nav">
+        <strong>文档页面:</strong> <a href="index.html">欢迎与快速上手</a> · <a href="annotation-tools.html">网页标注工具</a> · <a href="manager-page.html">标注管理器</a> · <a href="text-highlights.html">文本高亮</a> · <a href="screenshots-and-image-rects.html">截图与图片矩形</a> · <a href="element-marks-and-frames.html">元素标记与内嵌区域</a> · <a href="keyboard-shortcuts.html">快捷键</a> · <a href="folders-and-favorites.html">文件夹与收藏</a> · <a href="backup-import-export.html">备份、导入与导出</a> · <a href="cloud-sync.html">云同步</a> · <a href="sharing-links.html">分享链接</a> · <a href="plans-and-limits.html">版本与限额</a> · <a href="own-documents.html">自建文档</a> · <a href="annotating-pdfs.html">PDF 批注</a> · <a href="snapshots.html">页面快照</a> · <a href="troubleshooting.html">问题排查</a> · <a href="faq.html">常见问题</a> · <a href="contact-support.html">联系支持</a>
+      </div>
+
+      
+      <section class="docs-section">
+        <h2 class="docs-h2" id="not-showing">页面上的标注不显示了</h2>
+        <ul class="docs-list">
+          <li><strong>检查总开关</strong>——面板"更多"菜单（或扩展弹窗）里有<strong>标注开关</strong>。它关闭时任何页面都不显示标注。</li>
+          <li><strong>刷新页面</strong>——标注在页面加载时恢复。如果页面自你上次访问后变化很大，Sagitnote 会尝试多种策略重新定位；重度动态页面上偶尔会失手，重新标注一次即可。</li>
+          <li><strong>内嵌区域页面</strong>——如果页面出现"✎ 选择此区域"按钮，确认你激活的是包含标注的那块区域。</li>
+          <li><strong>页面对吗？</strong>——标注属于创建它的那个页面（和区域）。</li>
+        </ul>
+      </section>
+
+      <section class="docs-section">
+        <h2 class="docs-h2" id="sync-issues">同步暂停或失败</h2>
+        <ul class="docs-list">
+          <li>打开管理器顶栏的<strong>同步失败</strong>图标，查看未能上传的条目及原因。可逐条重试或全部重试；不再想上传的条目可以丢弃（本地数据保留）。</li>
+          <li>服务临时出错时自动同步会暂停并自行恢复——手动<strong>立即同步</strong>始终可用，并会解除暂停。</li>
+          <li>过大的快照或文档可能超出套餐限额；这些条目保留在本地，直到你腾出空间或升级。</li>
+        </ul>
+      </section>
+
+      <section class="docs-section">
+        <h2 class="docs-h2" id="login">登录问题</h2>
+        <ul class="docs-list">
+          <li><strong>会话过期？</strong>页面会出现重新登录提示；重新登录后从原状态继续。令牌通常自动静默续期。</li>
+          <li><strong>忘记密码？</strong>点击登录框或重新登录提示底部的<strong>忘记密码？</strong>链接——会在新标签页打开找回密码视图，通过邮箱验证码设置新密码。仅用 Google 登录的账号也可用同样方式首次设置密码，之后即可用邮箱加密码登录。</li>
+          <li>本浏览器存有其他账号的本地数据时，<strong>切换账号</strong>会被阻止——请先在设置 → 数据管理中清空本地数据。服务器上的数据不受影响，登录后自动同步回来。</li>
+        </ul>
+      </section>
+
+      <section class="docs-section">
+        <h2 class="docs-h2" id="images">另一台设备上看不到图片</h2>
+        <p>登录后图片上云可用（免费版与 Pro 均支持，占用云空间额度），被标注的图片和截图才会跨设备。云空间不足导致个别图片未能上传时，它们只保留在截取它的设备上——其他设备上的标注会显示页面原图替代。</p>
+      </section>
+
+      <section class="docs-section">
+        <h2 class="docs-h2" id="pdf">PDF 转换失败</h2>
+        <p>刷新页面重试。本地文件请确认已允许扩展访问文件网址，或使用文件选择器兜底。超大 PDF 转换较慢——请关注进度计数。</p>
+      </section>
+
+
+      <nav class="docs-pager">
+        <div class="docs-pager-prev"><a href="snapshots.html"><span class="docs-pager-label">上一篇</span><span class="docs-pager-title">← 页面快照</span></a></div>
+        <div class="docs-pager-next"><a href="faq.html"><span class="docs-pager-label">下一篇</span><span class="docs-pager-title">常见问题 →</span></a></div>
+      </nav>
+    </main>
+
+    <aside class="docs-toc" id="docsToc">
+      <div class="docs-toc-title">本页目录</div>
+      <div id="docsTocList"></div>
+    </aside>
+  </div>
+
+  <footer class="docs-footer">
+    <div class="docs-footer-inner">
+      <span>© 2026 Sagitnote</span>
+      <div class="docs-footer-links">
+        <a href="../../index.html">首页</a>
+        <a href="../../privacy-policy-zh.html">隐私政策</a>
+        <a href="../../terms-of-service-zh.html">服务条款</a>
+        <a href="mailto:service@webnoteshub.com">service@webnoteshub.com</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/docs-nav.js"></script>
+  <script src="../assets/docs.js"></script>
+</body>
+</html>

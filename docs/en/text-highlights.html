@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text Highlights — Sagitnote Docs</title>
+  <meta name="description" content="Everything about marking text on a page: colors, styles, notes, tags, auto mode, and how highlights survive page changes.">
+  <link rel="canonical" href="https://jiangwb123.github.io/sagitnote-docs/docs/en/text-highlights.html">
+  <link rel="alternate" hreflang="en" href="https://jiangwb123.github.io/sagitnote-docs/docs/en/text-highlights.html">
+  <link rel="alternate" hreflang="zh" href="https://jiangwb123.github.io/sagitnote-docs/docs/zh/text-highlights.html">
+  <link rel="alternate" hreflang="x-default" href="https://jiangwb123.github.io/sagitnote-docs/docs/">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../assets/fonts/fonts.css">
+  <link rel="stylesheet" href="../assets/docs.css">
+</head>
+<body class="docs-body" data-doc-id="text-highlights" data-doc-lang="en">
+
+  <header class="docs-topbar">
+    <div class="docs-topbar-inner">
+      <a class="docs-brand" href="../../index.html">
+        <svg width="26" height="26" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+          <rect width="64" height="64" rx="15" fill="#12875F"/>
+          <g fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 24.8 Q38.6 25.4 39.2 58" stroke-width="4.8"/>
+            <path d="M15.8 48.2 L34.3 29.7" stroke-width="4"/>
+            <rect x="44.43" y="6" width="13.57" height="13.57" rx="1.2" stroke-width="4.4"/>
+          </g>
+          <polygon points="42.3,21.7 38.2,33.6 30.4,25.8" fill="#FFFFFF"/>
+        </svg>
+        <span>Sagitnote</span>
+        <span class="docs-brand-badge">Docs</span>
+      </a>
+      <nav class="docs-topbar-nav">
+        <a class="docs-topbar-link docs-topbar-link--home" href="../../index.html">Home</a>
+        <a class="docs-lang-switch" id="docsLangSwitch" href="../zh/">zh</a>
+        <button class="docs-menu-btn" id="docsMenuBtn" aria-label="Open navigation">
+          <svg viewBox="0 0 24 24" width="18" height="18"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" fill="currentColor"/></svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <div class="docs-layout">
+    <aside class="docs-sidebar" id="docsSidebar">
+      <nav id="docsSidebarNav" aria-label="Docs navigation"></nav>
+    </aside>
+    <div class="docs-shade" id="docsShade"></div>
+
+    <main class="docs-main">
+      <nav class="docs-breadcrumb">
+        <a href="index.html">Docs</a><span class="docs-crumb-sep">›</span><span>Annotating in depth</span><span class="docs-crumb-sep">›</span><span class="docs-crumb-current">Text Highlights</span>
+      </nav>
+
+      <header class="docs-page-head">
+        <h1 class="docs-page-title">Text Highlights</h1>
+        <p class="docs-page-lede">Everything about marking text on a page: colors, styles, notes, tags, auto mode, and how highlights survive page changes.</p>
+      </header>
+
+      <div class="docs-noscript-nav">
+        <strong>Pages:</strong> <a href="index.html">Welcome &amp; Quick Start</a> · <a href="annotation-tools.html">Annotation Tools</a> · <a href="manager-page.html">Annotation Manager</a> · <a href="text-highlights.html">Text Highlights</a> · <a href="screenshots-and-image-rects.html">Screenshots &amp; Image Rectangles</a> · <a href="element-marks-and-frames.html">Element Marks &amp; Embedded Frames</a> · <a href="keyboard-shortcuts.html">Keyboard Shortcuts</a> · <a href="folders-and-favorites.html">Folders &amp; Favorites</a> · <a href="backup-import-export.html">Backup, Import &amp; Export</a> · <a href="cloud-sync.html">Cloud Sync</a> · <a href="sharing-links.html">Sharing Links</a> · <a href="plans-and-limits.html">Plans &amp; Limits</a> · <a href="own-documents.html">Your Own Documents</a> · <a href="annotating-pdfs.html">Annotating PDFs</a> · <a href="snapshots.html">Page Snapshots</a> · <a href="troubleshooting.html">Troubleshooting</a> · <a href="faq.html">FAQ</a> · <a href="contact-support.html">Contact Support</a>
+      </div>
+
+      
+      <section class="docs-section">
+        <h2 class="docs-h2" id="create">Creating a highlight</h2>
+        <p>Select any text on the page — a color bar appears next to the selection. Click a color dot and the text is highlighted immediately, using the style currently selected in the panel's style group. Right after that you can:</p>
+        <ul class="docs-list">
+          <li>Click the lit-up <strong>pen</strong> button in the bar to attach a note and tags to the fresh highlight, and choose how it is displayed: as a <strong>hover tooltip</strong>, or <strong>always visible</strong> on the page.</li>
+          <li>Want a different color? Click the highlight itself and restyle it in the quick popup.</li>
+        </ul>
+        <p>After one highlight, just select the next sentence — the bar appears for every selection, so annotating a whole passage is quick.</p>
+      </section>
+
+      <section class="docs-section">
+        <h2 class="docs-h2" id="styles">The five highlight styles</h2>
+        <div class="doc-table-wrap">
+          <table class="doc-table">
+            <thead><tr><th>Style</th><th>Effect</th></tr></thead>
+            <tbody>
+              <tr><td>Fill</td><td>Classic marker behind the text.</td></tr>
+              <tr><td>Border</td><td>Rectangle outline around the text.</td></tr>
+              <tr><td>Underline</td><td>Straight line under the text.</td></tr>
+              <tr><td>Wavy</td><td>Wavy line under the text — handy for “revisit this”.</td></tr>
+              <tr><td>Text Color</td><td>Recolors the characters themselves.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>Line width does not affect highlights — it only applies to drawing tools.</p>
+      </section>
+
+      <section class="docs-section">
+        <h2 class="docs-h2" id="colors">Colors</h2>
+        <p>The palette has six colors: <strong>red, amber, green, blue, violet, orange</strong> — all available to everyone. You can rename colors in Settings (Palette section, up to 12 characters) — for example to mark “follow-up” or “quote” — turning your colors into a personal classification system.</p>
+      </section>
+
+      <section class="docs-section">
+        <h2 class="docs-h2" id="auto">Auto mode</h2>
+        <p>Turn on <strong>Auto</strong> on the panel and simply keep selecting text: every selection is highlighted automatically with the current color — no clicks needed. Auto can't be combined with the drawing tools; picking a tool turns Auto off. The setting is remembered per browser.</p>
+      </section>
+
+      <section class="docs-section">
+        <h2 class="docs-h2" id="editing">Editing and deleting</h2>
+        <ul class="docs-list">
+          <li><strong>Quick popup</strong> — click an existing highlight: change its color, open the annotation editor (pen), or delete it (trash).</li>
+          <li><strong>Annotation Detail</strong> — open <strong>Browse</strong> (the count button), click the pencil icon on its card: type a note, manage tags, change color and style, or delete.</li>
+          <li><strong>Manager</strong> — in the Annotation Manager, you can edit any highlight's note and tags from its card.</li>
+        </ul>
+        <p>Highlights that carry a note behave like every annotation: close the note popup with its <strong>✕</strong> button, and a small bubble icon stays right after the highlight — click it to bring the note back. See <a href="annotation-tools.html#popups">Annotation popups</a>.</p>
+      </section>
+
+      <section class="docs-section">
+        <h2 class="docs-h2" id="persistence">How highlights survive</h2>
+        <p>Highlights are anchored to the text they mark and are re-applied automatically when you revisit the page. Sagitnote is resilient: if the page has shifted slightly, several fallback strategies relocate your highlights, and minor page changes heal on their own. Tracking parameters such as utm are ignored when matching pages, so highlights follow the article no matter which link you opened it from. To help highlights stick:</p>
+        <ul class="docs-list">
+          <li>Highlight stable content — articles, documentation, posts.</li>
+          <li>On heavily dynamic pages (feeds, virtualized lists), a highlight may occasionally fail to re-locate; simply re-apply it.</li>
+        </ul>
+      </section>
+
+
+      <nav class="docs-pager">
+        <div class="docs-pager-prev"><a href="manager-page.html"><span class="docs-pager-label">Previous</span><span class="docs-pager-title">← Annotation Manager</span></a></div>
+        <div class="docs-pager-next"><a href="screenshots-and-image-rects.html"><span class="docs-pager-label">Next</span><span class="docs-pager-title">Screenshots &amp; Image Rectangles →</span></a></div>
+      </nav>
+    </main>
+
+    <aside class="docs-toc" id="docsToc">
+      <div class="docs-toc-title">On this page</div>
+      <div id="docsTocList"></div>
+    </aside>
+  </div>
+
+  <footer class="docs-footer">
+    <div class="docs-footer-inner">
+      <span>© 2026 Sagitnote</span>
+      <div class="docs-footer-links">
+        <a href="../../index.html">Home</a>
+        <a href="../../privacy-policy.html">Privacy Policy</a>
+        <a href="../../terms-of-service.html">Terms of Service</a>
+        <a href="mailto:service@webnoteshub.com">service@webnoteshub.com</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/docs-nav.js"></script>
+  <script src="../assets/docs.js"></script>
+</body>
+</html>

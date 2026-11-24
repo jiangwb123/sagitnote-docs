@@ -1,0 +1,1162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sagitnote — Web Annotation · Documents · Snapshots · Collaboration</title>
+  <meta name="description" content="Sagitnote is a full-featured browser extension: 10 web annotation tools, your own documents & PDF annotation, page snapshots, sharing & collaboration, and cross-device cloud sync. Free after sign-up, local-first, export anytime.">
+  <meta name="waffo-verify" content="074e5b93db9cb66b59bd537f589354d7">
+  <link rel="canonical" href="https://jiangwb123.github.io/sagitnote-docs/">
+
+  <!-- Open Graph / Twitter（社交分享卡；抓取器不执行 JS，故用静态英文文案） -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Sagitnote">
+  <meta property="og:title" content="Sagitnote — Web Annotation · Documents · Snapshots · Collaboration">
+  <meta property="og:description" content="Sagitnote is a full-featured browser extension: 10 web annotation tools, your own documents & PDF annotation, page snapshots, sharing & collaboration, and cross-device cloud sync. Free after sign-up, local-first, export anytime.">
+  <meta property="og:url" content="https://jiangwb123.github.io/sagitnote-docs/">
+  <meta property="og:image" content="https://jiangwb123.github.io/sagitnote-docs/image/checkout-banner-1200x630-en-light.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Sagitnote — Web annotation · Documents · Collaboration">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sagitnote — Web Annotation · Documents · Snapshots · Collaboration">
+  <meta name="twitter:description" content="10 web annotation tools, your own documents & PDF annotation, page snapshots, sharing & collaboration, cross-device cloud sync. Free after sign-up.">
+  <meta name="twitter:image" content="https://jiangwb123.github.io/sagitnote-docs/image/checkout-banner-1200x630-en-light.png">
+
+  <link rel="icon" type="image/svg+xml" href="docs/assets/favicon.svg">
+  <link rel="stylesheet" href="assets/fonts/fonts.css">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- 结构化数据：Organization / WebSite / SoftwareApplication / FAQPage
+       （FAQ 文案与页面可见文本逐字一致；报价仅声明免费档，不虚构评分） -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://www.webnoteshub.com/#organization",
+        "name": "Sagitnote",
+        "url": "https://www.webnoteshub.com/",
+        "logo": "https://www.webnoteshub.com/image/icon-512.png",
+        "email": "service@webnoteshub.com"
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://www.webnoteshub.com/#website",
+        "url": "https://www.webnoteshub.com/",
+        "name": "Sagitnote",
+        "description": "Sagitnote — web annotation, documents, snapshots and collaboration. Browser extension for Chrome and Edge.",
+        "publisher": { "@id": "https://www.webnoteshub.com/#organization" },
+        "inLanguage": "en"
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://www.webnoteshub.com/#app",
+        "name": "Sagitnote",
+        "applicationCategory": "BrowserApplication",
+        "operatingSystem": "Chrome 109+, Edge 109+",
+        "browserRequirements": "Requires Chrome 109+ or Edge 109+ (Manifest V3)",
+        "description": "Web annotation browser extension: 10 annotation tools, your own documents & PDF annotation, page snapshots, sharing & collaboration, and cross-device cloud sync. Free after sign-up, local-first, export anytime.",
+        "url": "https://www.webnoteshub.com/",
+        "logo": "https://www.webnoteshub.com/image/icon-512.png",
+        "featureList": [
+          "Text Highlight",
+          "Arrow Drawing",
+          "Flag Marker",
+          "Rectangle Frame",
+          "Page Screenshot",
+          "Image Rectangle",
+          "Freehand Drawing",
+          "Text Note",
+          "Element Mark",
+          "Image Annotation",
+          "Own documents & PDF annotation",
+          "Page snapshots",
+          "Sharing links & collaboration",
+          "Cross-device cloud sync"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "description": "Free to use after sign-up",
+          "url": "https://www.webnoteshub.com/#pricing"
+        },
+        "isAccessibleForFree": true,
+        "inLanguage": ["en", "zh-CN", "de", "fr", "es", "pt"],
+        "publisher": { "@id": "https://www.webnoteshub.com/#organization" }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.webnoteshub.com/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Is Sagitnote free?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Sign up free and get every annotation tool, cloud sync, and collaboration (100 new annotations, 3 documents per day, 100MB cloud storage). Pro (US$6 for 1 month or US$50 for 1 year — one-time purchase) adds capacity: 1,000,000 annotations total, 2,000 new annotations per day, 20GB cloud storage, and 20M characters per document. Upgrade anytime; refund requests can be submitted within 14 days."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Where does my data live? Can anyone else see it?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Your data is stored locally in your browser and auto-backed-up to your own account, visible only to you. Content becomes visible to anyone with the link only when you actively create a share link."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do my collaborators need the extension?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. They open the link in any browser — on desktop or phone — and see the annotated document. You control the password, permissions (view / annotate / reply / edit), and a 1–30 day expiry."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do annotations survive page changes and SPA navigation?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Annotations restore automatically via triple anchoring (element path + content fingerprint + position ratio), across SPAs, iframes, and Shadow DOM. Extremely dynamic pages may occasionally need a single re-annotation."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which browsers and page types are supported?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Chrome 109+ and Edge 109+ (Manifest V3). Annotate regular web pages, local files, PDF documents, and your own documents; browser-internal pages (chrome:// and edge://) are not supported."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I request a refund?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Open \"My Orders\" in the extension and request a refund on a paid order within 14 days of payment. Track progress on the orders page, or email service@webnoteshub.com."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I get annotation cards out of the way?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Every note card has a ✕ close button. Once closed, a small bubble icon stays on the mark — click it to reopen the note, or hover it on desktop for a quick preview. The toolbar's \"Close all annotation popups\" toggle hides every open card at once, and it remembers your choice for your next visit."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What if I forget my password?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Click \"Forgot password?\" in the extension's sign-in box (or in the re-login prompt when your session expires) and follow the email verification steps to set a new one. Google-only accounts are covered too: resetting sets a password, so you can sign in with email as well."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <svg width="28" height="28" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+          <rect width="64" height="64" rx="15" fill="#12875F"/>
+          <g fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 24.8 Q38.6 25.4 39.2 58" stroke-width="4.8"/>
+            <path d="M15.8 48.2 L34.3 29.7" stroke-width="4"/>
+            <rect x="44.43" y="6" width="13.57" height="13.57" rx="1.2" stroke-width="4.4"/>
+          </g>
+          <polygon points="42.3,21.7 38.2,33.6 30.4,25.8" fill="#FFFFFF"/>
+        </svg>
+        <span>Sagitnote</span>
+      </a>
+      <div class="nav-links">
+        <a href="#features" data-i18n="nav.features">Features</a>
+        <a href="#usecases" data-i18n="nav.usecases">Use Cases</a>
+        <a href="#advanced" data-i18n="nav.advanced">Advanced</a>
+        <a href="#pricing" data-i18n="nav.pricing">Pricing</a>
+        <a href="#faq" data-i18n="nav.faq">FAQ</a>
+        <a href="/docs/" data-docs-link data-i18n="nav.docs">Docs</a>
+        <select class="lang-select" id="lang-select-nav" data-lang-select aria-label="Language / Sprache / Langue">
+          <option value="zh">中文</option>
+          <option value="en">English</option>
+          <option value="de">Deutsch</option>
+          <option value="fr">Français</option>
+          <option value="es">Español</option>
+          <option value="pt">Português</option>
+        </select>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero">
+    <div class="container">
+      <div class="hero-badge" data-i18n="hero.badge" data-i18n-mode="html">Browser Extension · Chrome &amp; Edge · Manifest V3</div>
+      <h1 class="hero-title">
+        <span class="hero-title-line" data-i18n="hero.line1">Think on any page,</span>
+        <span class="hero-title-line"><em data-i18n="hero.line2">leave your insights as annotations.</em></span>
+      </h1>
+      <p class="hero-desc" data-i18n="hero.desc" data-i18n-mode="html">Sagitnote is a full-featured web annotation extension: ten annotation tools, your own documents &amp; PDF annotation, page snapshots, and sharing &amp; collaboration — <strong>free to use after sign-up</strong>. Local-first data, with cloud sync that follows you across devices.</p>
+      <div class="hero-actions">
+        <a href="#" class="btn btn-primary" id="btn-install">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          <span data-i18n="hero.cta">Install Extension</span>
+        </a>
+        <a href="#features" class="btn btn-outline" data-i18n="hero.cta2">Learn More</a>
+      </div>
+      <ul class="hero-trust">
+        <li>
+          <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><rect x="2.6" y="3.4" width="14.8" height="10.2" rx="1.8" stroke="currentColor" stroke-width="1.6"/><path d="M10 13.6v3M7 16.6h6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          <span data-i18n="trust.local">Local-first storage</span>
+        </li>
+        <li>
+          <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><rect x="2.6" y="3.4" width="14.8" height="5.6" rx="1.6" stroke="currentColor" stroke-width="1.6"/><rect x="2.6" y="11" width="14.8" height="5.6" rx="1.6" stroke="currentColor" stroke-width="1.6"/><circle cx="6" cy="6.2" r=".9" fill="currentColor"/><circle cx="6" cy="13.8" r=".9" fill="currentColor"/></svg>
+          <span data-i18n="trust.eu">Data hosted in the EU</span>
+        </li>
+        <li>
+          <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M1.9 10S4.7 4.9 10 4.9 18.1 10 18.1 10 15.3 15.1 10 15.1 1.9 10 1.9 10Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="10" cy="10" r="2.3" stroke="currentColor" stroke-width="1.6"/><path d="M4.7 4.7 15.3 15.3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          <span data-i18n="trust.notrack">No tracking, no ads</span>
+        </li>
+        <li>
+          <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><rect x="2.6" y="3.4" width="14.8" height="13.2" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M8.4 8 14 10.4 11.5 11.5 10.4 14Z" fill="currentColor"/></svg>
+          <span data-i18n="trust.only">Only pages you annotate</span>
+        </li>
+      </ul>
+      <p class="hero-hint" data-i18n="hero.hint" data-i18n-mode="html">Chrome 109+ &amp; Edge 109+ · Free to use with registration</p>
+
+      <!-- Product visual -->
+      <div class="hero-visual" aria-hidden="true">
+        <div class="hero-window">
+          <div class="hero-bar">
+            <span class="hero-dot"></span><span class="hero-dot"></span><span class="hero-dot"></span>
+            <span class="hero-url">arxiv.org/abs/2406.01234</span>
+          </div>
+          <div class="hero-doc">
+            <div class="hd-title"></div>
+            <div class="hd-line" style="width:88%"></div>
+            <div class="hd-mark" style="width:72%"><i data-i18n="visual.highlight">Key finding highlighted</i></div>
+            <div class="hd-line" style="width:84%"></div>
+            <div class="hd-row">
+              <span class="hd-box" data-i18n="visual.quote">Source</span>
+              <svg class="hd-arrow" viewBox="0 0 70 34" fill="none">
+                <path d="M64 6C46 10 30 16 12 26" stroke="#DC2626" stroke-width="2.2" stroke-linecap="round"/>
+                <path d="M20 26L11 27l3-9" stroke="#DC2626" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span class="hd-note" data-i18n="visual.note">Check this against the source</span>
+            </div>
+            <div class="hd-line" style="width:66%"></div>
+            <div class="hd-line" style="width:78%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Trust Strip -->
+  <section class="trust-strip" aria-label="trust">
+    <div class="container">
+      <div class="trust-grid">
+        <div class="trust-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><line x1="2" y1="9" x2="22" y2="9"/><line x1="6" y1="14" x2="12" y2="14"/></svg>
+          <div><strong data-i18n="trust.t1.title">Local-first</strong><span data-i18n="trust.t1.desc">Data stays on your device by default — fully usable offline</span></div>
+        </div>
+        <div class="trust-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          <div><strong data-i18n="trust.t2.title">No lock-in</strong><span data-i18n="trust.t2.desc">Multi-format export and one-click full backup</span></div>
+        </div>
+        <div class="trust-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+          <div><strong data-i18n="trust.t3.title">14-day refund window</strong><span data-i18n="trust.t3.desc">Request a refund in the extension within 14 days of payment — refunded to your original method after review</span></div>
+        </div>
+        <div class="trust-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><polyline points="3 7 12 13 21 7"/></svg>
+          <div><strong data-i18n="trust.t4.title">Secure payment</strong><span data-i18n="trust.t4.desc">Card details go straight to Waffo Pancake — we never see them</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Annotation Tools -->
+  <section class="section" id="features">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label" data-i18n="tools.label">Annotation Tools</span>
+        <h2 class="section-title" data-i18n="tools.title">Ten annotation tools for every task</h2>
+        <p class="section-sub" data-i18n="tools.sub">From quick highlights to precise captures, from whole-element marks to freehand sketches — pick the right tool for the moment</p>
+      </div>
+
+      <div class="feature-grid">
+        <!-- Highlight -->
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 40 40" fill="none">
+              <rect x="7" y="15" width="26" height="9" rx="2.5" fill="currentColor" fill-opacity="0.28"/>
+              <path d="M7 10h26" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M7 30h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="feature-name" data-i18n="feat.highlight.name">Text Highlight</h3>
+          <p class="feature-desc" data-i18n="feat.highlight.desc">Select text to highlight. Five styles: background fill, border, underline, wavy underline, and text color. Highlights survive page reloads.</p>
+        </div>
+
+        <!-- Arrow -->
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 40 40" fill="none">
+              <path d="M9 31 L29 11" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+              <path d="M18 11h11v11" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="feature-name" data-i18n="feat.arrow.name">Arrow Drawing</h3>
+          <p class="feature-desc" data-i18n="feat.arrow.desc">Drag to draw arrows that point right at key elements. Add notes, adjust line width and color. Perfect for design reviews and proofreading.</p>
+        </div>
+
+        <!-- Flag -->
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 40 40" fill="none">
+              <path d="M13 34V7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+              <path d="M13 8h15l-4.5 5.5L28 19H13V8Z" fill="currentColor" fill-opacity="0.85"/>
+            </svg>
+          </div>
+          <h3 class="feature-name" data-i18n="feat.flag.name">Flag Marker</h3>
+          <p class="feature-desc" data-i18n="feat.flag.desc">Drop a flag on any page to bookmark it. Attach a note to quickly locate and revisit important content — especially useful for long reads.</p>
+        </div>
+
+        <!-- Rectangle Frame -->
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 40 40" fill="none">
+              <rect x="7" y="9" width="26" height="22" rx="2.5" stroke="currentColor" stroke-width="2.2" stroke-dasharray="5 4"/>
+              <circle cx="7" cy="9" r="2.6" fill="currentColor"/><circle cx="33" cy="9" r="2.6" fill="currentColor"/>
+              <circle cx="7" cy="31" r="2.6" fill="currentColor"/><circle cx="33" cy="31" r="2.6" fill="currentColor"/>
+            </svg>
+          </div>
+          <h3 class="feature-name" data-i18n="feat.rectframe.name">Rectangle Frame</h3>
+          <p class="feature-desc" data-i18n="feat.rectframe.desc">Draw a rectangle around any page area to spotlight it without covering content. Attach notes — great for circling key sections in reviews.</p>
+        </div>
+
+        <!-- Page Screenshot -->
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 40 40" fill="none">
+              <rect x="6" y="6" width="28" height="28" rx="3" stroke="currentColor" stroke-width="2" fill="currentColor" fill-opacity="0.06"/>
+              <rect x="12" y="12" width="16" height="16" rx="1.5" stroke="currentColor" stroke-width="2" stroke-dasharray="4 3"/>
+            </svg>
+          </div>
+          <h3 class="feature-name" data-i18n="feat.pagerect.name">Page Screenshot</h3>
+          <p class="feature-desc" data-i18n="feat.pagerect.desc">Select any page region to auto-capture a clean screenshot. Long pages support multi-segment stitching with auto thumbnails. Ideal for archiving and reporting.</p>
+        </div>
+
+        <!-- Image Rectangle -->
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 40 40" fill="none">
+              <rect x="6" y="8" width="28" height="24" rx="3" stroke="currentColor" stroke-width="2" fill="currentColor" fill-opacity="0.06"/>
+              <circle cx="14" cy="16" r="3" stroke="currentColor" stroke-width="1.8"/>
+              <path d="M6 27L16 20l8 5 10-9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="feature-name" data-i18n="feat.imgrect.name">Image Rectangle</h3>
+          <p class="feature-desc" data-i18n="feat.imgrect.desc">Drag to select any region of an image — the region is captured automatically. Annotate any image on a page and revisit it anytime.</p>
+        </div>
+
+        <!-- Freehand -->
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 40 40" fill="none">
+              <path d="M7 30C11 26 13 15 18 14c5-1 2 10 8 8 5-2 3-10 7-13" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="feature-name" data-i18n="feat.freehand.name">Freehand Drawing</h3>
+          <p class="feature-desc" data-i18n="feat.freehand.desc">Turn any page into a sketchpad — circle, underline, and sketch freely. Adjustable line width and color, with compressed path data for smooth performance.</p>
+        </div>
+
+        <!-- Text Note -->
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 40 40" fill="none">
+              <rect x="6" y="7" width="28" height="19" rx="4" stroke="currentColor" stroke-width="2" fill="currentColor" fill-opacity="0.08"/>
+              <path d="M14 26v6l7-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M12 14h16M12 19h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="feature-name" data-i18n="feat.textnote.name">Text Note</h3>
+          <p class="feature-desc" data-i18n="feat.textnote.desc">Add floating note cards anywhere on a page. Choose hover tooltips or always-visible notes; adjust the font size and color, and drag them anywhere. Close a note when you're done — it collapses into a small bubble icon you can click to bring it back.</p>
+        </div>
+
+        <!-- Element Mark -->
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 40 40" fill="none">
+              <rect x="8" y="7" width="24" height="9" rx="2" stroke="currentColor" stroke-width="2.2" fill="currentColor" fill-opacity="0.15"/>
+              <rect x="8" y="20" width="18" height="7" rx="2" stroke="currentColor" stroke-width="1.8" opacity="0.55"/>
+              <path d="M8 31h13" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" opacity="0.35"/>
+            </svg>
+          </div>
+          <h3 class="feature-name" data-i18n="feat.elemmark.name">Element Mark</h3>
+          <p class="feature-desc" data-i18n="feat.elemmark.desc">Hover to preview, click to frame an entire element — buttons, cards, navigation. The outline snaps to the element, so "this one" is unmistakable.</p>
+        </div>
+
+        <!-- Image Click Annotation -->
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 40 40" fill="none">
+              <rect x="5" y="6" width="30" height="23" rx="3" stroke="currentColor" stroke-width="2" fill="currentColor" fill-opacity="0.06"/>
+              <circle cx="13" cy="14" r="3" stroke="currentColor" stroke-width="1.8"/>
+              <path d="M5 24L15 17l7 4 13-10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="30" cy="30" r="6" stroke="currentColor" stroke-width="2"/>
+              <path d="M30 27.5v5M27.5 30h5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="feature-name" data-i18n="feat.imganno.name">Image Annotation</h3>
+          <p class="feature-desc" data-i18n="feat.imganno.desc">Click any image on a page to annotate it. Images are auto-saved and can be backed up to the cloud, viewable across devices.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Use Cases -->
+  <section class="section section-alt" id="usecases">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label" data-i18n="usecases.label">Use Cases</span>
+        <h2 class="section-title" data-i18n="usecases.title">Whatever you do, Sagitnote fits the way you work</h2>
+        <p class="section-sub" data-i18n="usecases.sub">Every field has its workflow — find yours</p>
+      </div>
+
+      <div class="usecase-list">
+
+        <!-- UC1: Academic -->
+        <div class="usecase-card">
+          <div class="usecase-visual">
+            <div class="usecase-illustration" style="--uc-color: #12875F">
+              <svg viewBox="0 0 100 100" fill="none">
+                <!-- Book/page -->
+                <rect x="12" y="16" width="56" height="72" rx="3" fill="#12875F" opacity="0.12" stroke="#12875F" stroke-width="1.5"/>
+                <rect x="18" y="24" width="20" height="2.5" rx="1.25" fill="#12875F" opacity="0.5"/>
+                <rect x="18" y="30" width="44" height="2.5" rx="1.25" fill="#12875F" opacity="0.3"/>
+                <rect x="18" y="36" width="44" height="2.5" rx="1.25" fill="#12875F" opacity="0.3"/>
+                <rect x="18" y="42" width="44" height="2.5" rx="1.25" fill="#12875F" opacity="0.3"/>
+                <rect x="18" y="48" width="30" height="2.5" rx="1.25" fill="#12875F" opacity="0.3"/>
+                <!-- KaTeX formula: E = mc² -->
+                <text x="20" y="68" font-family="serif" font-size="12" fill="#12875F" font-style="italic">E = mc</text>
+                <text x="48" y="64" font-family="serif" font-size="7" fill="#12875F">2</text>
+                <!-- Highlighter marks -->
+                <rect x="18" y="27" width="20" height="2.5" rx="1.25" fill="#f5c842" opacity="0.7"/>
+                <!-- Arrow pointing -->
+                <path d="M74 68 L56 42" stroke="#ef4444" stroke-width="1.5" stroke-linecap="round" marker-end="url(#arrow1)"/>
+                <defs><marker id="arrow1" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6" fill="#ef4444"/></marker></defs>
+                <!-- Tag -->
+                <rect x="68" y="72" width="24" height="14" rx="7" fill="#12875F" opacity="0.15"/>
+                <text x="80" y="82" text-anchor="middle" font-size="8" fill="#12875F" font-weight="600">LaTeX</text>
+              </svg>
+            </div>
+          </div>
+          <div class="usecase-body">
+            <span class="usecase-tag" data-i18n="uc1.tag">Academic Research</span>
+            <h3 class="usecase-title" data-i18n="uc1.title">Read papers, derive formulas — all-in-one knowledge management</h3>
+            <p class="usecase-intro" data-i18n="uc1.intro">When reading the latest papers on arXiv or PubMed, you need more than just text highlighting.</p>
+            <p class="usecase-desc" data-i18n="uc1.desc" data-i18n-mode="html">Mark core arguments and key data with <strong>five highlight styles</strong> on any paper you read. Record your thoughts and critiques with <strong>arrows and text notes</strong>. Even better, use <strong>your own documents</strong> to write literature reviews — the editor includes a built-in <strong>KaTeX math engine</strong> supporting both inline and display LaTeX formulas. Whether it's \(E = mc^2\) or complex matrix derivations, everything renders elegantly. Open and annotate PDF papers directly in the browser, with automatic cloud sync so research never stops when you switch devices.</p>
+          </div>
+        </div>
+
+        <!-- UC2: Design Review -->
+        <div class="usecase-card usecase-reverse">
+          <div class="usecase-body">
+            <span class="usecase-tag" data-i18n="uc2.tag">Design Review</span>
+            <h3 class="usecase-title" data-i18n="uc2.title">Visual feedback — pixel-precise communication</h3>
+            <p class="usecase-intro" data-i18n="uc2.intro">Tired of saying "move that thing a bit to the left"? Say goodbye to vague remote feedback.</p>
+            <p class="usecase-desc" data-i18n="uc2.desc" data-i18n-mode="html">Use <strong>arrows and flags</strong> to point directly at design elements. Sketch desired layouts with <strong>freehand drawing</strong>. Capture problem areas with <strong>page screenshots</strong>. A <strong>configurable 6-color palette</strong> lets you build your own color-coding system — red for must-fix, yellow for discussion, blue for suggestions. All annotations are auto-organized by page into <strong>folder trees</strong>, making review history clear and traceable.</p>
+          </div>
+          <div class="usecase-visual">
+            <div class="usecase-illustration" style="--uc-color: #12875F">
+              <svg viewBox="0 0 100 100" fill="none">
+                <!-- Browser frame -->
+                <rect x="10" y="8" width="80" height="64" rx="4" stroke="#12875F" stroke-width="1.5" fill="#12875F" opacity="0.05"/>
+                <rect x="10" y="8" width="80" height="10" rx="4" fill="#12875F" opacity="0.1"/>
+                <circle cx="16" cy="13" r="2" fill="#12875F" opacity="0.4"/>
+                <circle cx="22" cy="13" r="2" fill="#12875F" opacity="0.4"/>
+                <circle cx="28" cy="13" r="2" fill="#12875F" opacity="0.4"/>
+                <!-- Page elements -->
+                <rect x="16" y="22" width="30" height="6" rx="1.5" fill="#12875F" opacity="0.2"/>
+                <rect x="50" y="22" width="34" height="6" rx="1.5" fill="#12875F" opacity="0.12"/>
+                <rect x="16" y="32" width="68" height="4" rx="1" fill="#12875F" opacity="0.1"/>
+                <rect x="16" y="40" width="68" height="4" rx="1" fill="#12875F" opacity="0.1"/>
+                <!-- Annotations: arrow pointing at element -->
+                <path d="M78 28 L60 25" stroke="#ef4444" stroke-width="1.8" stroke-linecap="round"/>
+                <circle cx="78" cy="28" r="3" fill="#ef4444" opacity="0.2" stroke="#ef4444" stroke-width="1"/>
+                <!-- Rect around a region -->
+                <rect x="14" y="20" width="34" height="10" rx="1" stroke="#12875F" stroke-width="1.5" stroke-dasharray="3 2" fill="none"/>
+                <!-- Color palette dots -->
+                <circle cx="80" cy="52" r="3" fill="#ef4444" opacity="0.8"/>
+                <circle cx="88" cy="52" r="3" fill="#12875F" opacity="0.8"/>
+                <circle cx="80" cy="60" r="3" fill="#12875F" opacity="0.8"/>
+                <circle cx="88" cy="60" r="3" fill="#12875F" opacity="0.8"/>
+                <!-- Note bubble -->
+                <rect x="54" y="76" width="36" height="16" rx="4" fill="#fff" stroke="#ccc" stroke-width="0.8"/>
+                <rect x="58" y="80" width="28" height="2" rx="1" fill="#999"/>
+                <rect x="58" y="85" width="20" height="2" rx="1" fill="#999"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- UC3: Student -->
+        <div class="usecase-card">
+          <div class="usecase-visual">
+            <div class="usecase-illustration" style="--uc-color: #12875F">
+              <svg viewBox="0 0 100 100" fill="none">
+                <!-- Folder tree -->
+                <rect x="10" y="10" width="38" height="48" rx="4" stroke="#12875F" stroke-width="1.5" fill="#12875F" opacity="0.05"/>
+                <!-- Folder items -->
+                <rect x="16" y="16" width="26" height="6" rx="2" fill="#12875F" opacity="0.15"/>
+                <text data-i18n="visual.ml" x="22" y="20.5" font-size="6" fill="#12875F">📁 Machine Learning</text>
+                <rect x="20" y="26" width="22" height="5" rx="2" fill="#12875F" opacity="0.08"/>
+                <text data-i18n="visual.cs229" x="24" y="29.5" font-size="5" fill="#12875F" opacity="0.7">📄 CS229 notes</text>
+                <rect x="20" y="34" width="22" height="5" rx="2" fill="#12875F" opacity="0.08"/>
+                <text data-i18n="visual.papers" x="24" y="37.5" font-size="5" fill="#12875F" opacity="0.7">📄 Paper reading</text>
+                <rect x="16" y="42" width="26" height="6" rx="2" fill="#12875F" opacity="0.15"/>
+                <text data-i18n="visual.dl" x="22" y="46.5" font-size="6" fill="#12875F">📁 Deep Learning</text>
+                <!-- Highlighted text on right -->
+                <rect x="56" y="14" width="36" height="4" rx="1" fill="#ddd"/>
+                <rect x="56" y="22" width="36" height="4" rx="1" fill="#f5c842" opacity="0.7"/>
+                <rect x="56" y="30" width="28" height="4" rx="1" fill="#ddd"/>
+                <rect x="56" y="38" width="36" height="4" rx="1" fill="#f5c842" opacity="0.5"/>
+                <rect x="56" y="46" width="20" height="4" rx="1" fill="#ddd"/>
+                <!-- Export arrow -->
+                <path d="M86 56 L86 68" stroke="#12875F" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M80 64 L86 72 L92 64" stroke="#12875F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                <text x="86" y="82" text-anchor="middle" font-size="6" fill="#12875F" font-weight="600">Markdown</text>
+              </svg>
+            </div>
+          </div>
+          <div class="usecase-body">
+            <span class="usecase-tag" data-i18n="uc3.tag" data-i18n-mode="html">Learning &amp; Study</span>
+            <h3 class="usecase-title" data-i18n="uc3.title">From online courses to your personal knowledge base</h3>
+            <p class="usecase-intro" data-i18n="uc3.intro">You read vast amounts of learning material daily — course notes, tech docs, wiki entries. How do you turn fragmented reading into structured knowledge?</p>
+            <p class="usecase-desc" data-i18n="uc3.desc" data-i18n-mode="html">Use <strong>text highlighting</strong> to mark key points on course pages. Capture your own take with <strong>text notes</strong>. Create <strong>folders</strong> by subject to organize annotated pages. When exam season arrives, export everything as <strong>Markdown (Obsidian-compatible)</strong> and integrate seamlessly into your personal knowledge management system. Use <strong>your own documents</strong> to compile study notes with annotated screenshots and KaTeX formulas — rich, visual study guides.</p>
+          </div>
+        </div>
+
+        <!-- UC4: Tech Writing -->
+        <div class="usecase-card usecase-reverse">
+          <div class="usecase-body">
+            <span class="usecase-tag" data-i18n="uc4.tag">Technical Writing</span>
+            <h3 class="usecase-title" data-i18n="uc4.title">Write technical docs where formulas meet screenshots</h3>
+            <p class="usecase-intro" data-i18n="uc4.intro">Technical documentation needs both formula derivations and interface screenshots. Traditional writing tools struggle to combine the two.</p>
+            <p class="usecase-desc" data-i18n="uc4.desc" data-i18n-mode="html">Write technical content with rich text + KaTeX in <strong>your own documents</strong> — algorithm derivations, API specs, and architecture designs all in one place, with <strong>Word, Excel, PDF, and Markdown import</strong> supported. Capture web interfaces with <strong>page screenshots</strong> and annotate them; images back up to the cloud automatically. <strong>JSON / Markdown export</strong> lets you migrate documents to other platforms anytime, and when a document is ready, <strong>share a link</strong> so colleagues can comment right on it.</p>
+          </div>
+          <div class="usecase-visual">
+            <div class="usecase-illustration" style="--uc-color: #12875F">
+              <svg viewBox="0 0 100 100" fill="none">
+                <!-- Document page -->
+                <rect x="8" y="4" width="54" height="88" rx="3" stroke="#12875F" stroke-width="1.5" fill="#12875F" opacity="0.05"/>
+                <!-- Title -->
+                <rect x="14" y="10" width="30" height="3" rx="1.5" fill="#12875F" opacity="0.3"/>
+                <rect x="14" y="16" width="42" height="2" rx="1" fill="#12875F" opacity="0.15"/>
+                <rect x="14" y="21" width="42" height="2" rx="1" fill="#12875F" opacity="0.15"/>
+                <!-- Math formula display -->
+                <rect x="18" y="30" width="36" height="15" rx="2" fill="#12875F" opacity="0.08" stroke="#12875F" stroke-width="0.8" stroke-dasharray="2 1"/>
+                <text x="36" y="39" text-anchor="middle" font-size="8" fill="#12875F" font-family="serif" font-style="italic">∫ f(x)dx</text>
+                <!-- Screenshot with annotation -->
+                <rect x="18" y="52" width="36" height="20" rx="2" stroke="#12875F" stroke-width="1" fill="#12875F" opacity="0.06"/>
+                <rect x="20" y="55" width="32" height="3" rx="1" fill="#12875F" opacity="0.2"/>
+                <rect x="20" y="60" width="32" height="3" rx="1" fill="#12875F" opacity="0.2"/>
+                <rect x="20" y="65" width="18" height="3" rx="1" fill="#12875F" opacity="0.2"/>
+                <!-- Arrow annotation on screenshot -->
+                <path d="M54 56 L48 58" stroke="#ef4444" stroke-width="1.2" stroke-linecap="round"/>
+                <circle cx="54" cy="56" r="2" fill="#ef4444" opacity="0.3" stroke="#ef4444" stroke-width="0.8"/>
+                <!-- Cloud upload icon -->
+                <path d="M72 38 L72 68" stroke="#12875F" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M66 60 L72 70 L78 60" stroke="#12875F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                <circle cx="72" cy="32" r="6" stroke="#12875F" stroke-width="1.2" fill="#12875F" opacity="0.1"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- UC5: QA / Developer -->
+        <div class="usecase-card">
+          <div class="usecase-visual">
+            <div class="usecase-illustration" style="--uc-color: #12875F">
+              <svg viewBox="0 0 100 100" fill="none">
+                <!-- Browser with bug -->
+                <rect x="8" y="6" width="84" height="58" rx="4" stroke="#12875F" stroke-width="1.5" fill="#12875F" opacity="0.04"/>
+                <rect x="8" y="6" width="84" height="10" rx="4" fill="#12875F" opacity="0.08"/>
+                <circle cx="14" cy="11" r="2" fill="#12875F" opacity="0.3"/>
+                <circle cx="20" cy="11" r="2" fill="#12875F" opacity="0.3"/>
+                <circle cx="26" cy="11" r="2" fill="#12875F" opacity="0.3"/>
+                <!-- App content -->
+                <rect x="14" y="20" width="32" height="10" rx="2" fill="#12875F" opacity="0.1"/>
+                <rect x="50" y="20" width="36" height="10" rx="2" fill="#12875F" opacity="0.06"/>
+                <rect x="14" y="34" width="72" height="4" rx="1" fill="#12875F" opacity="0.08"/>
+                <rect x="14" y="42" width="72" height="4" rx="1" fill="#12875F" opacity="0.08"/>
+                <!-- Bug marker: red arrow + rect -->
+                <rect x="14" y="32" width="34" height="12" rx="2" stroke="#ef4444" stroke-width="1.8" stroke-dasharray="3 2" fill="#ef4444" opacity="0.08"/>
+                <path d="M52 26 L42 24" stroke="#ef4444" stroke-width="1.5" stroke-linecap="round"/>
+                <circle cx="52" cy="26" r="3" fill="#ef4444" opacity="0.25" stroke="#ef4444" stroke-width="1"/>
+                <!-- Text annotation bubble -->
+                <rect x="56" y="52" width="34" height="14" rx="4" fill="#fff" stroke="#12875F" stroke-width="1"/>
+                <text data-i18n="visual.bug.btn" x="60" y="60" font-size="5" fill="#12875F">This button does nothing</text>
+                <text data-i18n="visual.bug.steps" x="60" y="64" font-size="4" fill="#12875F" opacity="0.6">Repro steps: 1→2→3</text>
+                <!-- Multi-frame indicator -->
+                <rect x="82" y="68" width="12" height="10" rx="2" stroke="#12875F" stroke-width="1" fill="#12875F" opacity="0.08"/>
+                <rect x="66" y="70" width="12" height="6" rx="1" stroke="#12875F" stroke-width="0.8" fill="#12875F" opacity="0.05"/>
+                <text x="88" y="80" text-anchor="middle" font-size="5" fill="#12875F" font-weight="500">iframe</text>
+              </svg>
+            </div>
+          </div>
+          <div class="usecase-body">
+            <span class="usecase-tag" data-i18n="uc5.tag" data-i18n-mode="html">QA &amp; Development</span>
+            <h3 class="usecase-title" data-i18n="uc5.title">Bug reporting — let screenshots speak for you</h3>
+            <p class="usecase-intro" data-i18n="uc5.intro">When filing a bug, a marked-up screenshot beats a wall of text. But sharing screenshot files back and forth creates version chaos.</p>
+            <p class="usecase-desc" data-i18n="uc5.desc" data-i18n-mode="html">Mark problem locations and reproduction steps directly on the bug page with <strong>arrows, rectangle frames, and text notes</strong>. Everything lives in your annotation library — just open the page to see it, no digging through chat history for screenshots. <strong>Smart anchoring</strong> (element path + content fingerprint + position ratio) keeps annotations accurately placed through SPA route changes and DOM updates; <strong>iframe-heavy pages</strong> are supported too. When it's time to hand off, <strong>export annotations</strong> as JSON / Markdown and paste them straight into the ticket or wiki.</p>
+          </div>
+        </div>
+
+        <!-- UC6: Medical / Visual Analysis -->
+        <div class="usecase-card usecase-reverse">
+          <div class="usecase-body">
+            <span class="usecase-tag" data-i18n="uc6.tag" data-i18n-mode="html">Medical Imaging &amp; Visual Analysis</span>
+            <h3 class="usecase-title" data-i18n="uc6.title">Mark regions of interest — let images tell the diagnostic story</h3>
+            <p class="usecase-intro" data-i18n="uc6.intro">The web is full of professional imagery — DICOM medical scans, pathology slides, satellite maps, high-res art scans. You need to precisely mark regions and attach analytical notes.</p>
+            <p class="usecase-desc" data-i18n="uc6.desc" data-i18n-mode="html">The <strong>Image Rectangle tool</strong> lets you drag-select any region on a web image, auto-capture a clear screenshot, and attach text notes. Radiologists can <strong>mark lesions</strong> on online imaging platforms and note differential diagnoses. Pathologists can <strong>circle abnormal cell clusters</strong> on virtual slides. Art analysts can <strong>frame brushstroke details</strong> on high-res painting scans and annotate technique analysis. All annotated screenshots are auto-archived, and <strong>cloud sync</strong> means annotations made on the clinic workstation can be reviewed on your tablet at home. Export annotations as <strong>Markdown</strong> to compile consultation reports or teaching cases.</p>
+          </div>
+          <div class="usecase-visual">
+            <div class="usecase-illustration" style="--uc-color: #12875F">
+              <svg viewBox="0 0 100 100" fill="none">
+                <!-- Image frame -->
+                <rect x="10" y="6" width="80" height="64" rx="3" stroke="#12875F" stroke-width="1.5" fill="#12875F" opacity="0.05"/>
+                <!-- Image content suggestion: organ/region shapes -->
+                <ellipse cx="40" cy="30" rx="14" ry="8" fill="#12875F" opacity="0.1" stroke="#12875F" stroke-width="0.8"/>
+                <ellipse cx="60" cy="42" rx="9" ry="6" fill="#12875F" opacity="0.08" stroke="#12875F" stroke-width="0.8"/>
+                <circle cx="28" cy="52" r="5" fill="#12875F" opacity="0.08" stroke="#12875F" stroke-width="0.8"/>
+                <!-- Annotation: rectangle around region of interest -->
+                <rect x="30" y="42" width="18" height="14" rx="1" stroke="#ef4444" stroke-width="2" fill="#ef4444" opacity="0.1" stroke-dasharray="2 1"/>
+                <!-- Annotation: arrow pointing to ROI -->
+                <path d="M52 50 L42 49" stroke="#ef4444" stroke-width="1.5" stroke-linecap="round"/>
+                <circle cx="54" cy="50" r="3" fill="#ef4444" opacity="0.25" stroke="#ef4444" stroke-width="1"/>
+                <!-- Note card connected -->
+                <rect x="58" y="60" width="32" height="16" rx="3" fill="#fff" stroke="#12875F" stroke-width="1"/>
+                <rect x="62" y="65" width="24" height="2" rx="1" fill="#12875F" opacity="0.4"/>
+                <rect x="62" y="69" width="18" height="2" rx="1" fill="#12875F" opacity="0.4"/>
+                <!-- Crosshair / medical marker -->
+                <circle cx="38" cy="47" r="2" fill="none" stroke="#12875F" stroke-width="0.8"/>
+                <line x1="38" y1="42" x2="38" y2="52" stroke="#12875F" stroke-width="0.5"/>
+                <line x1="33" y1="47" x2="43" y2="47" stroke="#12875F" stroke-width="0.5"/>
+                <!-- Magnifier hint -->
+                <circle cx="78" cy="18" r="8" stroke="#12875F" stroke-width="1.2" fill="#12875F" opacity="0.06"/>
+                <line x1="83" y1="23" x2="86" y2="26" stroke="#12875F" stroke-width="1.2" stroke-linecap="round"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- UC7: Team Collaboration -->
+        <div class="usecase-card">
+          <div class="usecase-visual">
+            <div class="usecase-illustration" style="--uc-color: #12875F">
+              <svg viewBox="0 0 100 100" fill="none">
+                <!-- Document -->
+                <rect x="14" y="10" width="44" height="58" rx="3" stroke="#12875F" stroke-width="1.5" fill="#12875F" opacity="0.05"/>
+                <rect x="20" y="18" width="26" height="3" rx="1.5" fill="#12875F" opacity="0.35"/>
+                <rect x="20" y="26" width="32" height="2" rx="1" fill="#12875F" opacity="0.2"/>
+                <rect x="20" y="31" width="32" height="2" rx="1" fill="#12875F" opacity="0.2"/>
+                <rect x="20" y="40" width="24" height="2.5" rx="1" fill="#f5c842" opacity="0.8"/>
+                <rect x="20" y="47" width="32" height="2" rx="1" fill="#12875F" opacity="0.2"/>
+                <!-- Highlight on doc -->
+                <rect x="20" y="55" width="18" height="2.5" rx="1" fill="#f5c842" opacity="0.6"/>
+                <!-- Share link chain -->
+                <circle cx="70" cy="22" r="8" stroke="#12875F" stroke-width="1.6" fill="#12875F" opacity="0.08"/>
+                <path d="M67 22 h6 M70 19 v6" stroke="#12875F" stroke-width="1.4" stroke-linecap="round"/>
+                <path d="M62 16 C58 20, 58 24, 62 28" stroke="#12875F" stroke-width="1.2" fill="none" stroke-dasharray="2 2"/>
+                <!-- Collaborator A -->
+                <circle cx="74" cy="50" r="6" fill="#12875F" opacity="0.15" stroke="#12875F" stroke-width="1.2"/>
+                <circle cx="74" cy="48" r="1.8" fill="#12875F"/>
+                <path d="M70.5 53 C71 50.5, 77 50.5, 77.5 53" stroke="#12875F" stroke-width="1.2" fill="none"/>
+                <!-- Collaborator B -->
+                <circle cx="86" cy="62" r="6" fill="#12875F" opacity="0.15" stroke="#12875F" stroke-width="1.2"/>
+                <circle cx="86" cy="60" r="1.8" fill="#12875F"/>
+                <path d="M82.5 65 C83 62.5, 89 62.5, 89.5 65" stroke="#12875F" stroke-width="1.2" fill="none"/>
+                <!-- Reply thread -->
+                <rect x="62" y="74" width="30" height="10" rx="4" fill="#fff" stroke="#12875F" stroke-width="0.9"/>
+                <rect x="66" y="78" width="22" height="1.8" rx="0.9" fill="#12875F" opacity="0.45"/>
+                <path d="M62 84 L60 88 L66 84 Z" fill="#fff" stroke="#12875F" stroke-width="0.9"/>
+                <!-- Password hint -->
+                <rect x="66" y="34" width="26" height="8" rx="2" stroke="#12875F" stroke-width="1" fill="#12875F" opacity="0.06"/>
+                <circle cx="71" cy="38" r="1.2" fill="#12875F"/>
+                <circle cx="75" cy="38" r="1.2" fill="#12875F"/>
+                <circle cx="79" cy="38" r="1.2" fill="#12875F"/>
+                <circle cx="83" cy="38" r="1.2" fill="#12875F"/>
+                <circle cx="87" cy="38" r="1.2" fill="#12875F"/>
+              </svg>
+            </div>
+          </div>
+          <div class="usecase-body">
+            <span class="usecase-tag" data-i18n="uc7.tag" data-i18n-mode="html">Team Collaboration</span>
+            <h3 class="usecase-title" data-i18n="uc7.title">One link — review comments stay on the document</h3>
+            <p class="usecase-intro" data-i18n="uc7.intro">Editing, review, and mentoring feedback — nothing hurts more than feedback that leaves you guessing.</p>
+            <p class="usecase-desc" data-i18n="uc7.desc" data-i18n-mode="html">Create a share link for a <strong>document of your own</strong> or a <strong>document snapshot</strong> — recipients open it in any browser, <strong>no extension required</strong>. Combine <strong>view / annotate / reply / edit</strong> permissions, add a <strong>password</strong>, and set a <strong>1–30 day expiry</strong> that lapses automatically. Their annotations appear on your document with author names; reply to each one right there, so the discussion lives in the original text — and you can <strong>convert others' annotations</strong> into your own when needed. For editors working with authors, mentors grading assignments, and consultants delivering review findings.</p>
+          </div>
+        </div>
+
+        <!-- UC8: Archiving & Fact-checking -->
+        <div class="usecase-card usecase-reverse">
+          <div class="usecase-body">
+            <span class="usecase-tag" data-i18n="uc8.tag" data-i18n-mode="html">Archiving &amp; Fact-Checking</span>
+            <h3 class="usecase-title" data-i18n="uc8.title">Pages change. Snapshots don't.</h3>
+            <p class="usecase-intro" data-i18n="uc8.intro">Web content is fleeting — pricing pages, news, policy terms. What you see today may be gone tomorrow.</p>
+            <p class="usecase-desc" data-i18n="uc8.desc" data-i18n-mode="html">A <strong>page snapshot</strong> saves the page in one click — Full snapshots preserve content and styling — letting you revisit "this page as it was" anytime. <strong>Highlight, frame, and annotate</strong> on the snapshot as usual, and record findings and source comparisons with <strong>text notes</strong>. Snapshots can be <strong>exported for the record</strong> (JSON / Markdown; HTML on Pro), and <strong>document snapshots</strong> can additionally be <strong>shared with colleagues or legal</strong> with password and permission controls. For journalists and fact-checkers preserving evidence, marketers archiving competitor pages, and compliance teams keeping terms on file.</p>
+          </div>
+          <div class="usecase-visual">
+            <div class="usecase-illustration" style="--uc-color: #12875F">
+              <svg viewBox="0 0 100 100" fill="none">
+                <!-- Stacked frozen pages -->
+                <rect x="24" y="16" width="48" height="60" rx="3" stroke="#12875F" stroke-width="1.2" fill="#12875F" opacity="0.04"/>
+                <rect x="20" y="12" width="48" height="60" rx="3" stroke="#12875F" stroke-width="1.4" fill="#faf8f5"/>
+                <rect x="26" y="20" width="22" height="3" rx="1.5" fill="#12875F" opacity="0.35"/>
+                <rect x="26" y="28" width="36" height="2" rx="1" fill="#12875F" opacity="0.18"/>
+                <rect x="26" y="33" width="36" height="2" rx="1" fill="#12875F" opacity="0.18"/>
+                <rect x="26" y="42" width="20" height="2.5" rx="1" fill="#f5c842" opacity="0.8"/>
+                <rect x="26" y="49" width="36" height="2" rx="1" fill="#12875F" opacity="0.18"/>
+                <rect x="26" y="54" width="28" height="2" rx="1" fill="#12875F" opacity="0.18"/>
+                <!-- Snowflake / freeze badge -->
+                <circle cx="70" cy="20" r="9" fill="#faf8f5" stroke="#12875F" stroke-width="1.4"/>
+                <line x1="70" y1="14.5" x2="70" y2="25.5" stroke="#12875F" stroke-width="1.2" stroke-linecap="round"/>
+                <line x1="65.2" y1="17.2" x2="74.8" y2="22.8" stroke="#12875F" stroke-width="1.2" stroke-linecap="round"/>
+                <line x1="65.2" y1="22.8" x2="74.8" y2="17.2" stroke="#12875F" stroke-width="1.2" stroke-linecap="round"/>
+                <!-- Clock badge -->
+                <circle cx="22" cy="66" r="8" fill="#faf8f5" stroke="#12875F" stroke-width="1.3"/>
+                <path d="M22 62 V66 L25 68" stroke="#12875F" stroke-width="1.2" stroke-linecap="round" fill="none"/>
+                <!-- Export tag -->
+                <rect x="52" y="80" width="38" height="12" rx="6" fill="#12875F" opacity="0.12"/>
+                <text x="71" y="88.5" text-anchor="middle" font-size="6" fill="#12875F" font-weight="600">Markdown</text>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Sharing & Collaboration showcase -->
+  <section class="section" id="share">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label" data-i18n="share.label" data-i18n-mode="html">Sharing &amp; Collaboration</span>
+        <h2 class="section-title" data-i18n="share.title">Share your documents, gather everyone's thoughts</h2>
+        <p class="section-sub" data-i18n="share.sub">Send a link to your own documents or document snapshots — friends highlight and annotate right in their browser, and you exchange ideas through replies. No extension needed on their side.</p>
+      </div>
+      <figure class="share-visual">
+        <img src="image/share-annotate-illustration-1280x800.png" width="1280" height="800" loading="lazy" alt="Workflow illustration: you share DOC, IMG and MD files from your laptop; three friends annotate their copies with highlights, circles and notes; a REPLY loop with chat bubbles shows the discussion going back and forth.">
+        <figcaption class="share-caption" data-i18n="share.caption">Documents · Images · Markdown — annotate together, reply to discuss</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="section" id="how-it-works">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label" data-i18n="steps.label">Get Started</span>
+        <h2 class="section-title" data-i18n="steps.title">Install, register, start annotating</h2>
+      </div>
+
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <h3 class="step-title" data-i18n="step1.title">Install Extension</h3>
+          <p class="step-desc" data-i18n="step1.desc">Download the Sagitnote package and load it into Chrome or Edge.</p>
+        </div>
+        <div class="step-connector"></div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <h3 class="step-title" data-i18n="step2.title">Create Account</h3>
+          <p class="step-desc" data-i18n="step2.desc">Sign up with an email code, or sign in with one click using Google or GitHub. The free tier includes all annotation tools and cloud sync.</p>
+        </div>
+        <div class="step-connector"></div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <h3 class="step-title" data-i18n="step3.title">Start Annotating</h3>
+          <p class="step-desc" data-i18n="step3.desc">Open any webpage — the control panel appears automatically. Select text to highlight, or pick a tool to start annotating. Data is auto-saved locally, and backed up to your account once you're signed in.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Advanced Features -->
+  <section class="section section-alt" id="advanced">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label" data-i18n="adv.label">Advanced Features</span>
+        <h2 class="section-title" data-i18n="adv.title">Beyond Annotation</h2>
+      </div>
+
+      <div class="advanced-grid">
+        <div class="advanced-card">
+          <div class="advanced-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <div>
+            <h3 class="advanced-title" data-i18n="adv.sync.name">Cross-Device Cloud Sync</h3>
+            <p class="advanced-desc" data-i18n="adv.sync.desc">Annotations, documents, snapshots, and folders back up automatically to your account and restore on sign-in. Cloud sync with 100MB storage on Free, 20GB on Pro. Changes flow both ways; when conflicts happen, the latest edit wins.</p>
+          </div>
+        </div>
+        <div class="advanced-card">
+          <div class="advanced-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          </div>
+          <div>
+            <h3 class="advanced-title" data-i18n="adv.doc.name">Your Own Documents</h3>
+            <p class="advanced-desc" data-i18n="adv.doc.desc">Built-in rich text editor with live KaTeX formulas, tables, and images. Import Word, Excel, PDF, and Markdown (Obsidian syntax preserved), or export to multiple formats and take your work anywhere.</p>
+          </div>
+        </div>
+        <div class="advanced-card">
+          <div class="advanced-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+          </div>
+          <div>
+            <h3 class="advanced-title" data-i18n="adv.pdf.name">PDF Annotation</h3>
+            <p class="advanced-desc" data-i18n="adv.pdf.desc">The built-in PDF.js engine opens PDFs in an annotation-ready viewer automatically — from local files or a URL — with every annotation tool available.</p>
+          </div>
+        </div>
+        <div class="advanced-card">
+          <div class="advanced-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 8h18"/><line x1="7" y1="16" x2="13" y2="16"/><circle cx="18" cy="15" r="3"/><path d="M20.5 17.5 L23 20"/></svg>
+          </div>
+          <div>
+            <h3 class="advanced-title" data-i18n="adv.snapshot.name">Page Snapshots</h3>
+            <p class="advanced-desc" data-i18n="adv.snapshot.desc">Save "the page as it was" in one click — Lite snapshots extract the main content, Full snapshots preserve content and styling. Snapshots can be annotated and backed up to the cloud; document snapshots can also be shared via link — reliable for archiving and record-keeping.</p>
+          </div>
+        </div>
+        <div class="advanced-card">
+          <div class="advanced-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.6" y1="13.5" x2="15.4" y2="17.5"/><line x1="15.4" y1="6.5" x2="8.6" y2="10.5"/></svg>
+          </div>
+          <div>
+            <h3 class="advanced-title" data-i18n="adv.share.name">Sharing & Collaboration</h3>
+            <p class="advanced-desc" data-i18n="adv.share.desc">Create share links for your own documents and document snapshots: combine view / annotate / reply / edit permissions, with optional password protection and 1–30 day expiry. Recipients need no extension — the shared page works in any browser, on desktop and mobile, and replies stay right on the document.</p>
+          </div>
+        </div>
+        <div class="advanced-card">
+          <div class="advanced-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          </div>
+          <div>
+            <h3 class="advanced-title" data-i18n="adv.export.name">Import, Export & Backup</h3>
+            <p class="advanced-desc" data-i18n="adv.export.desc">Export as JSON / CSV / Markdown (Obsidian-compatible; Pro adds HTML), or make a one-click full backup (.json.gz). On import, choose to skip, merge, or overwrite — it's your data, after all.</p>
+          </div>
+        </div>
+        <div class="advanced-card">
+          <div class="advanced-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+          </div>
+          <div>
+            <h3 class="advanced-title" data-i18n="adv.anchor.name">Smart Anchoring</h3>
+            <p class="advanced-desc" data-i18n="adv.anchor.desc">Triple anchoring (XPath + MD5 content hash + page position ratio) with multi-level fallback search. Annotations re-position themselves through SPA navigation, virtual scrolling, and DOM mutations.</p>
+          </div>
+        </div>
+        <div class="advanced-card">
+          <div class="advanced-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+          </div>
+          <div>
+            <h3 class="advanced-title" data-i18n="adv.frame.name">Multi-Frame & Cross-Origin</h3>
+            <p class="advanced-desc" data-i18n="adv.frame.desc">Annotate inside iframes and nested frames. Smart detection of multiple frame zones lets you choose the target and switch seamlessly.</p>
+          </div>
+        </div>
+        <div class="advanced-card">
+          <div class="advanced-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <div>
+            <h3 class="advanced-title" data-i18n="adv.compat.name">Broad Page Compatibility</h3>
+            <p class="advanced-desc" data-i18n="adv.compat.desc">Works on the vast majority of web pages — Shadow DOM, MathML, KaTeX formulas, strict CSP, and other complex environments. Browser-internal pages (chrome:// / edge://) are not supported. Tested on dozens of popular sites.</p>
+          </div>
+        </div>
+        <div class="advanced-card">
+          <div class="advanced-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+          </div>
+          <div>
+            <h3 class="advanced-title" data-i18n="adv.palette.name">Palette, Tags & Folders</h3>
+            <p class="advanced-desc" data-i18n="adv.palette.desc">A configurable 6-color palette with saved color schemes. Tag annotations, then organize with folder trees, favorites, full-text search, and bulk actions — effortless even at scale.</p>
+          </div>
+        </div>
+        <div class="advanced-card">
+          <div class="advanced-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><line x1="6" y1="10" x2="6" y2="10.01"/><line x1="10" y1="10" x2="10" y2="10.01"/><line x1="14" y1="10" x2="14" y2="10.01"/><line x1="18" y1="10" x2="18" y2="10.01"/><line x1="7" y1="14" x2="7" y2="14.01"/><line x1="11" y1="14" x2="11" y2="14.01"/><line x1="15" y1="14" x2="15" y2="14.01"/></svg>
+          </div>
+          <div>
+            <h3 class="advanced-title" data-i18n="adv.keys.name">Shortcuts & Themes</h3>
+            <p class="advanced-desc" data-i18n="adv.keys.desc">Keys 1–8 switch tools, C cycles colors, S cycles styles, and D toggles the annotations drawer. Choose light, dark, or sepia themes — or follow your system automatically.</p>
+          </div>
+        </div>
+        <div class="advanced-card">
+          <div class="advanced-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+          </div>
+          <div>
+            <h3 class="advanced-title" data-i18n="adv.security.name">Security & Privacy</h3>
+            <p class="advanced-desc" data-i18n="adv.security.desc">HTTPS everywhere; documents and snapshots are sanitized server-side against script injection; share passwords are stored encrypted and links can be revoked instantly; card details go straight to our payment processor and never touch our servers.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="section" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label" data-i18n="price.label">Pricing</span>
+        <h2 class="section-title" data-i18n="price.title">Free to use, upgrade as needed</h2>
+        <p class="section-sub" data-i18n="price.sub">Every annotation tool, cloud sync, and collaboration is included free. Pro adds more storage and higher limits.</p>
+      </div>
+
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-name" data-i18n="price.free.name">Free</h3>
+            <div class="pricing-price">
+              <span class="pricing-amount" data-i18n="price.free.amount">Free</span>
+            </div>
+            <p class="pricing-desc" data-i18n="price.free.desc">Sign up and go — covers personal, everyday annotation</p>
+          </div>
+          <ul class="pricing-features">
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="price.free.f1">All 10 annotation tools, including text highlights</span></li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="price.free.f2">50,000 annotations total · up to 50 per page</span></li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="price.free.f2b">Up to 5 per annotation type on a page · text highlights not separately capped</span></li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="price.free.f3">Cloud sync, sharing & collaboration, image upload — all included (sync volume subject to daily caps)</span></li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="price.free.f4">100MB cloud storage</span></li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="price.free.f5">100 new annotations, 3 documents & 2,000 imports per day</span></li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="price.free.f6" data-i18n-mode="html">Export as JSON / CSV / Markdown</span></li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="price.free.f8">3 active shares · 20 replies per shared page</span></li>
+            <li class="pricing-feature-muted" data-i18n="price.free.f7">Up to 5M characters per document / snapshot</li>
+          </ul>
+          <a href="#" class="btn btn-primary pricing-cta btn-install" data-i18n="price.free.cta">Install Free</a>
+        </div>
+        <div class="pricing-card pricing-card-pro">
+          <div class="pricing-badge" data-i18n="price.pro.badge">Recommended</div>
+          <div class="pricing-header">
+            <h3 class="pricing-name" data-i18n="price.pro.name">Pro</h3>
+            <div class="pricing-price">
+              <span class="pricing-amount" data-i18n="price.pro.amount">US$6 / 1 month · US$50 / 1 year</span>
+            </div>
+            <p class="pricing-desc" data-i18n="price.pro.desc">Higher daily limits and larger cloud storage</p>
+          </div>
+          <ul class="pricing-features">
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><strong data-i18n="price.pro.f1">All Free features included</strong></li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="price.pro.f2">1,000,000 annotations total · up to 300 per page</span></li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="price.pro.f3">20GB cloud storage</span></li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="price.pro.f4">2,000 annotations, 100 documents & 10,000 imports per day · no per-type page caps</span></li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="price.pro.f5">200 active shares · 200 replies per shared page</span></li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="price.pro.f6">Export JSON / CSV / Markdown / HTML · up to 20M characters per document</span></li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="price.pro.f7">Refund requests accepted within 14 days (subject to review) · email support</span></li>
+          </ul>
+          <a href="#" class="btn btn-primary pricing-cta btn-install" data-i18n="price.pro.cta">Install & Go Pro</a>
+          <p class="pricing-cta-note" data-i18n="price.pro.note" data-i18n-mode="html">Install the extension → sign up → upgrade in one click<br>(US$6 / 1 month · US$50 / 1 year — one-time purchase; repeat purchases extend your current expiry)</p>
+        </div>
+      </div>
+      <p class="pricing-footnote" data-i18n="price.note">See your live quotas on the Usage panel in the extension. Payments are processed securely by the Waffo Pancake checkout — card data never touches our servers.</p>
+    </div>
+  </section>
+
+  <!-- Privacy -->
+  <section class="section section-alt" id="privacy">
+    <div class="container">
+      <div class="privacy-grid">
+        <div class="privacy-content">
+          <span class="section-label" data-i18n="privacy.label">Data Security</span>
+          <h2 class="section-title" data-i18n="privacy.title">Your data, always under your control</h2>
+          <ul class="privacy-list">
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#12875F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              <span data-i18n="privacy.p1">All annotation data is stored locally in your browser's IndexedDB by default</span>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#12875F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              <span data-i18n="privacy.p2">Fully functional offline, unaffected by network conditions</span>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#12875F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              <span data-i18n="privacy.p3">Export as JSON / CSV / Markdown plus a full backup — take everything with you</span>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#12875F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              <span data-i18n="privacy.p4">Documents and snapshots are sanitized when saved and when displayed to prevent script injection</span>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#12875F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              <span data-i18n="privacy.p5">Share passwords stored encrypted; links can be disabled or deleted anytime, cutting access instantly</span>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#12875F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              <span data-i18n="privacy.p6">Data is never cleared on token expiry or network loss — local copy always preserved</span>
+            </li>
+          </ul>
+        </div>
+        <div class="privacy-visual">
+          <div class="privacy-shield">
+            <svg viewBox="0 0 80 96" fill="none">
+              <path d="M40 4 L8 18 V44 C8 68 40 92 40 92 C40 92 72 68 72 44 V18 Z" stroke="#14201B" stroke-width="2" fill="#faf8f5"/>
+              <circle cx="40" cy="48" r="12" stroke="#14201B" stroke-width="2" fill="none"/>
+              <path d="M36 48 L39 51 L45 44" stroke="#12875F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label" data-i18n="faq.label">FAQ</span>
+        <h2 class="section-title" data-i18n="faq.title">Questions, answered</h2>
+      </div>
+
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary data-i18n="faq.q1">Is Sagitnote free?</summary>
+          <p data-i18n="faq.a1" data-i18n-mode="html">Yes. Sign up free and get every annotation tool, cloud sync, and collaboration (100 new annotations, 3 documents per day, 100MB cloud storage). Pro (US$6 for 1 month or US$50 for 1 year — one-time purchase) adds capacity: 1,000,000 annotations total, 2,000 new annotations per day, 20GB cloud storage, and 20M characters per document. Upgrade anytime; refund requests can be submitted within 14 days.</p>
+        </details>
+        <details class="faq-item">
+          <summary data-i18n="faq.q2">Where does my data live? Can anyone else see it?</summary>
+          <p data-i18n="faq.a2" data-i18n-mode="html">Your data is stored locally in your browser and auto-backed-up to your own account, visible only to you. Content becomes visible to anyone with the link only when you actively create a share link.</p>
+        </details>
+        <details class="faq-item">
+          <summary data-i18n="faq.q3">Do my collaborators need the extension?</summary>
+          <p data-i18n="faq.a3" data-i18n-mode="html">No. They open the link in any browser — on desktop or phone — and see the annotated document. You control the password, permissions (view / annotate / reply / edit), and a 1–30 day expiry.</p>
+        </details>
+        <details class="faq-item">
+          <summary data-i18n="faq.q4">Do annotations survive page changes and SPA navigation?</summary>
+          <p data-i18n="faq.a4" data-i18n-mode="html">Yes. Annotations restore automatically via triple anchoring (element path + content fingerprint + position ratio), across SPAs, iframes, and Shadow DOM. Extremely dynamic pages may occasionally need a single re-annotation.</p>
+        </details>
+        <details class="faq-item">
+          <summary data-i18n="faq.q5">Which browsers and page types are supported?</summary>
+          <p data-i18n="faq.a5" data-i18n-mode="html">Chrome 109+ and Edge 109+ (Manifest V3). Annotate regular web pages, local files, PDF documents, and your own documents; browser-internal pages (chrome:// and edge://) are not supported.</p>
+        </details>
+        <details class="faq-item">
+          <summary data-i18n="faq.q6">How do I request a refund?</summary>
+          <p data-i18n="faq.a6" data-i18n-mode="html">Open "My Orders" in the extension and request a refund on a paid order within 14 days of payment. Track progress on the orders page, or email service@webnoteshub.com.</p>
+        </details>
+        <details class="faq-item">
+          <summary data-i18n="faq.q7">Can I get annotation cards out of the way?</summary>
+          <p data-i18n="faq.a7" data-i18n-mode="html">Yes. Every note card has a ✕ close button. Once closed, a small bubble icon stays on the mark — click it to reopen the note, or hover it on desktop for a quick preview. The toolbar's "Close all annotation popups" toggle hides every open card at once, and it remembers your choice for your next visit.</p>
+        </details>
+        <details class="faq-item">
+          <summary data-i18n="faq.q8">What if I forget my password?</summary>
+          <p data-i18n="faq.a8" data-i18n-mode="html">Click "Forgot password?" in the extension's sign-in box (or in the re-login prompt when your session expires) and follow the email verification steps to set a new one. Google-only accounts are covered too: resetting sets a password, so you can sign in with email as well.</p>
+        </details>
+      </div>
+
+      <p class="faq-more"><a href="/docs/" data-docs-link data-i18n="faq.more">More answers in the help docs →</a></p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-band">
+    <div class="container">
+      <h2 class="cta-title" data-i18n="cta.title">Ready to get started?</h2>
+      <p class="cta-desc" data-i18n="cta.desc">Install Sagitnote, sign up for a free account, and start leaving your thoughts on the web.</p>
+      <div class="cta-actions">
+        <a href="#" class="btn btn-primary btn-lg" id="btn-install-bottom">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          <span data-i18n="cta.install">Install Sagitnote</span>
+        </a>
+        <a href="https://chromewebstore.google.com/detail/sagitnote/llajphjgjgmplakjdjoaghojmgogghic" target="_blank" rel="noopener" class="btn btn-ghost btn-lg" id="btn-chrome">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9.2"/><circle cx="12" cy="12" r="3.6"/><path d="M12 2.8v5.6"/><path d="M20.9 16.2l-4.9-2.8"/><path d="M3.1 16.2l4.9-2.8"/></svg>
+          <span data-i18n="cta.chrome">Chrome Web Store</span>
+        </a>
+        <a href="https://microsoftedge.microsoft.com/addons/detail/nkepoeakeihkniefgjeofdfhmfmdaedd" target="_blank" rel="noopener" class="btn btn-ghost btn-lg" id="btn-edge">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9.2"/><path d="M2.8 12h18.4"/><path d="M12 2.8c2.6 2.4 4 5.7 4 9.2s-1.4 6.8-4 9.2c-2.6-2.4-4-5.7-4-9.2s1.4-6.8 4-9.2z"/></svg>
+          <span data-i18n="cta.edge">Edge Add-ons</span>
+        </a>
+      </div>
+      <p class="cta-version" data-i18n="cta.version">v1.0.0 · Chrome 109+ · Edge 109+</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brandcol">
+          <a href="#" class="footer-logo-row">
+            <svg width="26" height="26" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+          <rect width="64" height="64" rx="15" fill="#12875F"/>
+          <g fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 24.8 Q38.6 25.4 39.2 58" stroke-width="4.8"/>
+            <path d="M15.8 48.2 L34.3 29.7" stroke-width="4"/>
+            <rect x="44.43" y="6" width="13.57" height="13.57" rx="1.2" stroke-width="4.4"/>
+          </g>
+          <polygon points="42.3,21.7 38.2,33.6 30.4,25.8" fill="#FFFFFF"/>
+        </svg>
+            <span>Sagitnote</span>
+          </a>
+          <p class="footer-tagline" data-i18n="footer.tagline" data-i18n-mode="html">Web Annotation · Documents · Snapshots · Collaboration</p>
+          <a class="footer-mail" href="mailto:service@webnoteshub.com">service@webnoteshub.com</a>
+        </div>
+        <div class="footer-cols">
+          <div class="footer-col">
+            <div class="footer-col-title" data-i18n="footer.colProduct">Product</div>
+            <a href="#features" data-i18n="nav.features">Features</a>
+            <a href="#usecases" data-i18n="nav.usecases">Use Cases</a>
+            <a href="#pricing" data-i18n="nav.pricing">Pricing</a>
+          </div>
+          <div class="footer-col">
+            <div class="footer-col-title" data-i18n="footer.colResources">Resources</div>
+            <a href="/docs/" data-docs-link data-i18n="nav.docs">Docs</a>
+            <a href="#faq" data-i18n="nav.faq">FAQ</a>
+            <a href="mailto:service@webnoteshub.com" data-i18n="footer.support">Contact Us</a>
+          </div>
+          <div class="footer-col">
+            <div class="footer-col-title" data-i18n="footer.colGuides">Guides</div>
+            <a href="markup-io-alternative.html" data-i18n="footer.gMarkup">Markup.io Alternative</a>
+            <a href="weava-alternative.html" data-i18n="footer.gWeava">Weava Alternative</a>
+            <a href="annotate-word-documents-online.html" data-i18n="footer.gWord">Annotate Word Documents Online</a>
+            <a href="visual-feedback-for-ai-coding-assistants.html" data-i18n="footer.gAi">Visual Feedback for AI Coding Assistants</a>
+          </div>
+          <div class="footer-col">
+            <div class="footer-col-title" data-i18n="footer.colLegal">Legal</div>
+            <a href="privacy-policy.html" data-legal-link="privacy-policy" data-i18n="footer.privacyPolicy">Privacy Policy</a>
+            <a href="terms-of-service.html" data-legal-link="terms-of-service" data-i18n="footer.terms">Terms of Service</a>
+            <a href="dmca.html" data-i18n="footer.dmca">DMCA / Copyright</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span class="footer-copy" data-i18n="footer.copy">© 2026 Sagitnote. Made with care.</span>
+        <select class="lang-select lang-select--footer" id="lang-select-footer" data-lang-select aria-label="Language / Sprache / Langue">
+          <option value="zh">中文</option>
+          <option value="en">English</option>
+          <option value="de">Deutsch</option>
+          <option value="fr">Français</option>
+          <option value="es">Español</option>
+          <option value="pt">Português</option>
+        </select>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts: lang data first, then i18n engine (removes need for separate script.js) -->
+  <!-- install-zip.js 必须在 i18n.js 之前：直装包文件名的全站唯一定义处 -->
+  <script src="lang.js"></script>
+  <script src="install-zip.js"></script>
+  <script src="i18n.js"></script>
+</body>
+</html>

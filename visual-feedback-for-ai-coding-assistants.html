@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Give AI Coding Assistants Visual Feedback | Sagitnote</title>
+  <meta name="description" content="How to give AI coding assistants visual feedback: pair each mark with a machine-readable anchor. Free workflow with Sagitnote's Modification Prompts.">
+  <link rel="canonical" href="https://jiangwb123.github.io/sagitnote-docs/visual-feedback-for-ai-coding-assistants.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Sagitnote">
+  <meta property="og:title" content="How to Give AI Coding Assistants Visual Feedback | Sagitnote">
+  <meta property="og:description" content="Pair each mark with a machine-readable anchor. Free workflow with Sagitnote's Modification Prompts.">
+  <meta property="og:url" content="https://jiangwb123.github.io/sagitnote-docs/visual-feedback-for-ai-coding-assistants.html">
+  <meta property="og:image" content="https://jiangwb123.github.io/sagitnote-docs/image/checkout-banner-1200x630-en-light.png">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" type="image/svg+xml" href="docs/assets/favicon.svg">
+  <link rel="stylesheet" href="assets/fonts/fonts.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="landing.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "name": "How to Give AI Coding Assistants Visual Feedback — Sagitnote",
+        "description": "The practical way to give AI coding assistants visual feedback: pair each visual mark with a machine-readable anchor.",
+        "url": "https://www.webnoteshub.com/visual-feedback-for-ai-coding-assistants.html",
+        "inLanguage": "en",
+        "isPartOf": { "@id": "https://www.webnoteshub.com/#website" },
+        "about": { "@id": "https://www.webnoteshub.com/#app" }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.webnoteshub.com/" },
+          { "@type": "ListItem", "position": 2, "name": "AI Visual Feedback", "item": "https://www.webnoteshub.com/visual-feedback-for-ai-coding-assistants.html" }
+        ]
+      },
+      {
+        "@type": "HowTo",
+        "name": "How to give an AI coding assistant visual feedback",
+        "totalTime": "PT5M",
+        "step": [
+          { "@type": "HowToStep", "name": "Mark the issues on the live page", "text": "Open the page in Chrome or Edge, enable Sagitnote, and mark each problem with an arrow, box, highlight, or note — writing the fix you want in the note." },
+          { "@type": "HowToStep", "name": "Generate the Modification Prompt", "text": "From the annotation panel's More menu, choose Generate Modification Prompts. Sagitnote aggregates every mark into one structured Markdown document." },
+          { "@type": "HowToStep", "name": "Copy or download", "text": "Copy the prompt to the clipboard or download it as a .md file." },
+          { "@type": "HowToStep", "name": "Paste into your assistant", "text": "Paste it into Claude Code, Cursor, Copilot, Windsurf, Cline, or any chat-based assistant — or feed the XPath anchors to an agent with browser access via Chrome DevTools MCP." },
+          { "@type": "HowToStep", "name": "Review and iterate", "text": "After the fix lands, re-check the page and mark whatever is still off — each round produces a fresh, anchored prompt." }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Why isn't a screenshot alone enough feedback for an AI assistant?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A screenshot shows the problem but not its address. The model has to guess which element you mean ('the button on the right' — of the eleven buttons on the page?), then search the DOM for a match. Pairing the visual mark with a machine-readable anchor (an XPath or CSS selector) plus the element's actual text removes that guesswork: the assistant verifies the position from the selector and the element text, then edits the right component."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is an XPath or CSS selector anchor?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It's the machine-readable address of one element in the DOM — for example /html/body/main/section[2]/div/h2 points at a specific heading. Assistants with browser or DevTools access (for example an agent using Chrome DevTools MCP) can jump straight to that element, confirm it by its text, and inspect the surrounding code before editing."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which AI coding assistants does this work with?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Any chat-based assistant — Claude Code, Cursor, GitHub Copilot, Windsurf, Cline, or a plain chat with Claude, ChatGPT, or Gemini — because the output is ordinary Markdown you paste in. It works best with agentic setups that can read the XPath anchors directly, such as agents wired to the page through Chrome DevTools MCP."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is the Modification Prompts feature free?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes — it's included in Sagitnote's free tier along with all ten annotation tools. Sagitnote is free after sign-up; Pro (US$6 for 1 month or US$50 for 1 year) only raises usage limits."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does it work on any website?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It works wherever the extension can annotate: regular pages, SPAs with client-side routing, pages with iframes and Shadow DOM, and math-rendering sites. Browser-internal pages like chrome:// and edge:// can't be annotated."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <svg width="28" height="28" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+          <rect width="64" height="64" rx="15" fill="#12875F"/>
+          <g fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 24.8 Q38.6 25.4 39.2 58" stroke-width="4.8"/>
+            <path d="M15.8 48.2 L34.3 29.7" stroke-width="4"/>
+            <rect x="44.43" y="6" width="13.57" height="13.57" rx="1.2" stroke-width="4.4"/>
+          </g>
+          <polygon points="42.3,21.7 38.2,33.6 30.4,25.8" fill="#FFFFFF"/>
+        </svg>
+        <span>Sagitnote</span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html#features">Features</a>
+        <a href="index.html#pricing">Pricing</a>
+        <a href="docs/en/annotation-tools.html">Docs</a>
+        <a href="https://chromewebstore.google.com/detail/sagitnote/llajphjgjgmplakjdjoaghojmgogghic" target="_blank" rel="noopener">Add to Chrome</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="lp-hero">
+    <div class="container">
+      <nav class="lp-crumbs" aria-label="Breadcrumb">
+        <a href="index.html">Home</a><span class="lp-crumbs-sep">›</span><span>AI Visual Feedback</span>
+      </nav>
+      <span class="section-label">Workflow Guide</span>
+      <h1 class="lp-hero-title">How to give AI coding assistants visual feedback they can act on</h1>
+      <p class="lp-hero-lede">You can see exactly what's wrong. The trick is telling the model <em>where</em>, in a form it can resolve — here's the workflow, from screenshots to machine-anchored fix prompts.</p>
+      <div class="lp-hero-actions">
+        <a href="https://chromewebstore.google.com/detail/sagitnote/llajphjgjgmplakjdjoaghojmgogghic" target="_blank" rel="noopener" class="btn btn-primary btn-lg">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          <span>Add to Chrome — Free</span>
+        </a>
+        <a href="https://microsoftedge.microsoft.com/addons/detail/nkepoeakeihkniefgjeofdfhmfmdaedd" target="_blank" rel="noopener" class="btn btn-outline btn-lg">Add to Edge</a>
+      </div>
+      <ul class="lp-chips">
+        <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Free workflow</li>
+        <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Works with Claude Code, Cursor, Copilot…</li>
+        <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Output is plain Markdown</li>
+        <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>No data leaves your browser</li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="section" style="padding-top:56px">
+      <div class="container">
+        <div class="lp-answer">
+          <strong>Quick answer:</strong> the most effective visual feedback for an AI coding assistant pairs <strong>a visual mark</strong> (what looks wrong) with <strong>a machine-readable anchor</strong> (which element, as an XPath or CSS selector) and <strong>a precise instruction</strong> (what to change). A screenshot alone makes the model guess the element; prose alone is ambiguous. The <a href="#workflow">workflow below</a> shows how to produce all three at once — free — with Sagitnote's <strong>Generate Modification Prompts</strong>.
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="problem">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">The Problem</span>
+          <h2 class="section-title">Why "fix the button on the right" wastes a round trip</h2>
+        </div>
+        <div class="lp-body-text lp-prose">
+          <p>Anyone who reviews UI with an AI pair-programmer knows the loop: you look at the rendered page, something is off, you type a description, the model guesses, ships a change, and — half the time — fixed the wrong thing. Repeat until you give up and edit it yourself.</p>
+          <p>The failure isn't the model's intelligence; it's the input. <strong>Human eyes resolve "the button on the right" against the whole visual scene instantly. The model only has your words and the codebase</strong> — and if the page has four similarly-named buttons across three components, your sentence is genuinely ambiguous.</p>
+          <p>What resolves the ambiguity is an <strong>address</strong>: point at the exact element in the DOM, and suddenly "make this smaller" has exactly one referent.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="approaches">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Three Approaches</span>
+          <h2 class="section-title">From worst to best</h2>
+        </div>
+        <div class="lp-body-text lp-prose">
+          <h3>1. Screenshot + prose (the default)</h3>
+          <p>Paste a screenshot and write "the heading overlaps the card below it". Works, because modern models read images well — but the model must <em>find</em> the element in code by description alone. Every ambiguity costs a round trip.</p>
+          <h3>2. Manual anchors from DevTools</h3>
+          <p>Open DevTools, inspect the element, copy its CSS selector or XPath, paste that with your instruction. Precise — and tedious enough that nobody does it for more than one or two issues per page.</p>
+          <h3>3. Mark visually, export anchors automatically</h3>
+          <p>This is the sweet spot: you point at the page the way your eyes already do — drawing on it — and software translates every mark into a selector-anchored instruction. That's exactly what Sagitnote's <strong>Generate Modification Prompts</strong> does; the rest of this page is that workflow.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="workflow">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">The Workflow</span>
+          <h2 class="section-title">Annotate the page, get a fix-ready prompt</h2>
+          <p class="section-sub">With Sagitnote (free) — about a minute per review round</p>
+        </div>
+        <ol class="lp-steps">
+          <li>
+            <span class="lp-step-title">Mark the issues on the live page</span>
+            <p class="lp-step-desc">Open the page in Chrome or Edge, enable Sagitnote, and mark each problem: <strong>arrow</strong> at the misaligned element, <strong>box</strong> around the broken region, <strong>highlight</strong> on the bad copy. In each note, write the fix you want — that text becomes the instruction.</p>
+          </li>
+          <li>
+            <span class="lp-step-title">Generate the Modification Prompt</span>
+            <p class="lp-step-desc">Open the annotation panel's <strong>More (⋯) menu → Generate Modification Prompts</strong>. Sagitnote aggregates every mark on the page into one structured Markdown document, sorted top to bottom.</p>
+          </li>
+          <li>
+            <span class="lp-step-title">Copy or download</span>
+            <p class="lp-step-desc">One click copies the whole prompt to the clipboard; another downloads it as <code>sagitnote-modification-prompt-YYYY-MM-DD.md</code>.</p>
+          </li>
+          <li>
+            <span class="lp-step-title">Paste into your assistant</span>
+            <p class="lp-step-desc">Works with <strong>Claude Code, Cursor, GitHub Copilot, Windsurf, Cline</strong>, or any chat assistant. For agentic setups, the XPath anchors are directly consumable: an agent with browser access (e.g. via <strong>Chrome DevTools MCP</strong>) can locate each anchor, verify it by the element text, and edit the surrounding component.</p>
+          </li>
+          <li>
+            <span class="lp-step-title">Review, iterate</span>
+            <p class="lp-step-desc">After the fix lands, reload and mark whatever's still off — each round produces a fresh prompt. Because your marks live on the page, the full issue list stays visible while you work through it.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="example">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">What You Get</span>
+          <h2 class="section-title">The generated prompt, up close</h2>
+          <p class="section-sub">Each annotation becomes one anchored block — selector, verification text, your instruction</p>
+        </div>
+        <pre class="lp-code"># Page Modification Prompts
+- Page URL: https://example.com/pricing
+- Total annotations: 2
+- Generated at: 2026-11-02T14:05:12.381Z
+
+Note: below are the "anchor XPATH" and "modification suggestion (annotation)" for each mark on this page.
+⚠️ Important: the anchor XPATH marks the "position" of the annotation — it is not necessarily the exact element to modify.
+The element that actually needs changing may be the anchor's parent, child, or sibling (e.g. an annotation lands on a line of text,
+but the real target may be the heading/card/button wrapping it).
+Use Chrome DevTools MCP: first locate the anchor by XPATH (verify the position via the "element text"),
+then inspect its parent/child/sibling nodes, determine the element to modify from the annotation, and apply the change.
+
+---
+
+[Annotation 1]
+Type: Arrow
+Anchor XPATH (position reference; the real target may be its parent/child/sibling): /html/body/main/section[2]/div/h2
+Element tag: h2
+Element text (to verify position): "Simple, transparent pricing"
+Coverage: from (left 58%, top 21%) pointing to (left 67%, top 26%), horizontal right, length approx 132 px
+Annotation (modification suggestion): This heading wraps onto two lines at 1280px width. Reduce font-size or shorten the text.
+---
+
+[Annotation 2]
+Type: Text highlight
+Anchor XPATH (position reference; the real target may be its parent/child/sibling): /html/body/main/section[3]/ul/li[3]/span
+Element tag: span
+Selected text: "Cancel anytime"
+Annotation (modification suggestion): Change copy to "Cancel anytime — no questions asked".
+---</pre>
+        <p class="lp-code-caption">Illustrative output (trimmed). Labels match the generator verbatim; values depend on your page and marks.</p>
+      </div>
+    </section>
+
+    <section class="section" id="tips">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Craft</span>
+          <h2 class="section-title">Five habits that make AI feedback land</h2>
+        </div>
+        <div class="lp-body-text lp-prose">
+          <ul style="list-style:none;display:flex;flex-direction:column;gap:12px">
+            <li><strong>1. One issue per annotation.</strong> Bundled instructions ("fix spacing, rewrite copy, and make it dark mode") get half-done. Separate marks produce separate, checkable instructions.</li>
+            <li><strong>2. Describe the desired end state, not just the flaw.</strong> "Reduce to 14px so the row fits one line" beats "looks cramped".</li>
+            <li><strong>3. Use the arrow for position, note for intent.</strong> The arrow gives the anchor; your note gives the reason and the fix. Together they're unambiguous.</li>
+            <li><strong>4. Verify with the element text.</strong> The prompt includes the element's text so the assistant can confirm it found the right node before editing — encourage it to check.</li>
+            <li><strong>5. Keep rounds small.</strong> Ten anchored fixes per prompt is plenty; models execute short lists far more reliably than long ones.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="faq">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">FAQ</span>
+          <h2 class="section-title">Questions, answered</h2>
+        </div>
+        <div class="lp-faq">
+          <details class="faq-item">
+            <summary>Why isn't a screenshot alone enough feedback for an AI assistant?</summary>
+            <p>A screenshot shows the problem but not its address. The model has to guess which element you mean ('the button on the right' — of the eleven buttons on the page?), then search the DOM for a match. Pairing the visual mark with a machine-readable anchor (an XPath or CSS selector) plus the element's actual text removes that guesswork: the assistant verifies the position from the selector and the element text, then edits the right component.</p>
+          </details>
+          <details class="faq-item">
+            <summary>What is an XPath or CSS selector anchor?</summary>
+            <p>It's the machine-readable address of one element in the DOM — for example /html/body/main/section[2]/div/h2 points at a specific heading. Assistants with browser or DevTools access (for example an agent using Chrome DevTools MCP) can jump straight to that element, confirm it by its text, and inspect the surrounding code before editing.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Which AI coding assistants does this work with?</summary>
+            <p>Any chat-based assistant — Claude Code, Cursor, GitHub Copilot, Windsurf, Cline, or a plain chat with Claude, ChatGPT, or Gemini — because the output is ordinary Markdown you paste in. It works best with agentic setups that can read the XPath anchors directly, such as agents wired to the page through Chrome DevTools MCP.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Is the Modification Prompts feature free?</summary>
+            <p>Yes — it's included in Sagitnote's free tier along with all ten annotation tools. Sagitnote is free after sign-up; Pro (US$6 for 1 month or US$50 for 1 year) only raises usage limits.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Does it work on any website?</summary>
+            <p>It works wherever the extension can annotate: regular pages, SPAs with client-side routing, pages with iframes and Shadow DOM, and math-rendering sites. Browser-internal pages like chrome:// and edge:// can't be annotated.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="related">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Related Guides</span>
+          <h2 class="section-title">Keep reading</h2>
+        </div>
+        <div class="lp-related">
+          <a class="lp-related-card" href="markup-io-alternative.html">
+            <span class="lp-related-tag">Alternative</span>
+            <span class="lp-related-title">Markup.io Alternative</span>
+            <span class="lp-related-desc">Visual feedback without per-seat pricing — from US$50/year</span>
+          </a>
+          <a class="lp-related-card" href="weava-alternative.html">
+            <span class="lp-related-tag">Alternative</span>
+            <span class="lp-related-title">Weava Alternative</span>
+            <span class="lp-related-desc">Highlighting &amp; research annotation in an actively maintained extension</span>
+          </a>
+          <a class="lp-related-card" href="annotate-word-documents-online.html">
+            <span class="lp-related-tag">How-to</span>
+            <span class="lp-related-title">Annotate Word Documents Online</span>
+            <span class="lp-related-desc">Import .docx, mark it up, share a link — reviewers install nothing</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <section class="cta-band">
+    <div class="container">
+      <h2 class="cta-title">Mark it once, ship the fix</h2>
+      <p class="cta-desc">Install Sagitnote free — your next review round can produce its first anchored prompt in five minutes.</p>
+      <div class="cta-actions">
+        <a href="https://chromewebstore.google.com/detail/sagitnote/llajphjgjgmplakjdjoaghojmgogghic" target="_blank" rel="noopener" class="btn btn-primary btn-lg">Add to Chrome</a>
+        <a href="https://microsoftedge.microsoft.com/addons/detail/nkepoeakeihkniefgjeofdfhmfmdaedd" target="_blank" rel="noopener" class="btn btn-ghost btn-lg">Add to Edge</a>
+      </div>
+      <p class="cta-version">Chrome 109+ · Edge 109+ · Manifest V3</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brandcol">
+          <a href="index.html" class="footer-logo-row">
+            <svg width="26" height="26" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+              <rect width="64" height="64" rx="15" fill="#12875F"/>
+              <g fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 24.8 Q38.6 25.4 39.2 58" stroke-width="4.8"/>
+                <path d="M15.8 48.2 L34.3 29.7" stroke-width="4"/>
+                <rect x="44.43" y="6" width="13.57" height="13.57" rx="1.2" stroke-width="4.4"/>
+              </g>
+              <polygon points="42.3,21.7 38.2,33.6 30.4,25.8" fill="#FFFFFF"/>
+            </svg>
+            <span>Sagitnote</span>
+          </a>
+          <p class="footer-tagline">Web Annotation · Documents · Snapshots · Collaboration</p>
+          <a class="footer-mail" href="mailto:service@webnoteshub.com">service@webnoteshub.com</a>
+        </div>
+        <div class="footer-cols">
+          <div class="footer-col">
+            <div class="footer-col-title">Product</div>
+            <a href="index.html#features">Features</a>
+            <a href="index.html#pricing">Pricing</a>
+            <a href="docs/en/">Docs</a>
+          </div>
+          <div class="footer-col">
+            <div class="footer-col-title">Guides</div>
+            <a href="markup-io-alternative.html">Markup.io Alternative</a>
+            <a href="weava-alternative.html">Weava Alternative</a>
+            <a href="annotate-word-documents-online.html">Annotate Word Online</a>
+            <a href="visual-feedback-for-ai-coding-assistants.html">AI Visual Feedback</a>
+          </div>
+          <div class="footer-col">
+            <div class="footer-col-title">Legal</div>
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="terms-of-service.html">Terms of Service</a>
+            <a href="dmca.html">DMCA / Copyright</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span class="footer-copy">© 2026 Sagitnote. Made with care.</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
